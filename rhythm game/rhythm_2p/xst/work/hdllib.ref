@@ -1,0 +1,28 @@
+EN mario_hard NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/dot3.vhd" sub00/vhpl17 1433911615
+AR bubble_easy a "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/bubble_easy.vhd" sub00/vhpl25 1433911622
+AR mario_hard a "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/dot3.vhd" sub00/vhpl18 1433911616
+AR kbd behavioral "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/kbd.vhd" sub00/vhpl15 1433911628
+AR main behavioral "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/main.vhd" sub00/vhpl07 1433911632
+EN bubble_easy NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/bubble_easy.vhd" sub00/vhpl24 1433911621
+AR motor behavioral "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/motor.vhd" sub00/vhpl09 1433911624
+EN mario_easy NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/song1.vhd" sub00/vhpl20 1433911619
+EN s7 NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/s7.vhd" sub00/vhpl12 1433911625
+AR bubble_hard a "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/song2.vhd" sub00/vhpl23 1433911618
+AR dot_dis a "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/dot_dis.vhd" sub00/vhpl01 1433911614
+AR s7 behavioral "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/s7.vhd" sub00/vhpl13 1433911626
+EN motor NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/motor.vhd" sub00/vhpl08 1433911623
+EN vfd NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/vfd.vhd" sub00/vhpl26 1433911629
+EN main NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/main.vhd" sub00/vhpl04 1433911631
+EN song1 NULL C:/Users/RF/Desktop/7test/test6/song1.vhd sub00/vhpl05 1433317069
+EN song2 NULL C:/Users/RF/Desktop/7test/test6/song2.vhd sub00/vhpl02 1433317071
+AR bcd behavioral "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/bcd.vhd" sub00/vhpl11 1433911612
+AR song1 a C:/Users/RF/Desktop/7test/test6/song1.vhd sub00/vhpl06 1433317070
+EN dot_dis NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/dot_dis.vhd" sub00/vhpl00 1433911613
+EN buble_hard NULL C:/Users/RF/Desktop/xilinx/test8/song2.vhd sub00/vhpl16 1433428132
+AR buble_hard a C:/Users/RF/Desktop/xilinx/test8/song2.vhd sub00/vhpl19 1433428133
+AR vfd behavioral "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/vfd.vhd" sub00/vhpl27 1433911630
+AR song2 a C:/Users/RF/Desktop/7test/test6/song2.vhd sub00/vhpl03 1433317072
+EN bcd NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/bcd.vhd" sub00/vhpl10 1433911611
+AR mario_easy a "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/song1.vhd" sub00/vhpl21 1433911620
+EN kbd NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/kbd.vhd" sub00/vhpl14 1433911627
+EN bubble_hard NULL "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_2p/song2.vhd" sub00/vhpl22 1433911617

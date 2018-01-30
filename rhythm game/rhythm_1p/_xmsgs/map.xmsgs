@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">m_s_IBUF</arg> has no load.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">dot3/Mcompar_cnt_cmp_ge0000_cy&lt;16&gt;</arg>
+	<arg fmt="%s" index="2">dot3/Mcount_cnt_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">dot4/Mcompar_cnt_cmp_ge0000_cy&lt;16&gt;</arg>
+	<arg fmt="%s" index="2">dot4/Mcount_cnt_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">dot1/Mcompar_cnt_cmp_ge0000_cy&lt;16&gt;</arg>
+	<arg fmt="%s" index="2">dot1/Mcount_cnt_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">dot2/Mcompar_cnt_cmp_ge0000_cy&lt;16&gt;</arg>
+	<arg fmt="%s" index="2">dot2/Mcount_cnt_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;6&gt;1161</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;6&gt;4621_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot4/Mrom_note_rom00001001</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot4/note&lt;5&gt;_43_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;_2_f5101_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;8_32</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;8_2_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;9_38</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;9_2_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/u0/Mmux_dot_d_104</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/u0/Mmux_dot_d_9_f5_4</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;1291</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/Mrom_note_rom0000556134652_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;9_316</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;9_2_f5_01</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;_2_f561_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;_2_f55</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">vfd1/Mmux__varindex0001_13</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">vfd1/Mmux__varindex0001_10_f5_3</arg>.  <arg fmt="%z" index="3">There is a conflict for the GYMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;_2_f5_34</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;_2_f5_2_f541_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;_2_f5101_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;8_32</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;8_2_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;9_38</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;9_2_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;_2_f55</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;9_315</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;9_2_f5_0</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;_2_f5_34</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;_2_f5_2_f53</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;8_32</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;8_2_f511_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;4&gt;1231</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;2221_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;_2_f561_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;9_315</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;9_2_f5_0</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/note&lt;5&gt;_36</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/note&lt;5&gt;_2_f581_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot2/note&lt;4&gt;2171</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot2/note&lt;5&gt;324_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot3/Mrom_note_rom00001381</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot3/Mrom_note_rom0000663140422_SW0_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot2/u0/Mmux_dot_d_104</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot2/u0/Mmux_dot_d_9_f5_4</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot2/note&lt;4&gt;2101</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot2/note&lt;7&gt;81106_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot2/note&lt;4&gt;2131</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot2/note&lt;7&gt;71438_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot2/note&lt;7&gt;5301</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot2/note&lt;7&gt;61794_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot2/note&lt;7&gt;2_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot2/note&lt;7&gt;2_6_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the GYMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot4/note&lt;7&gt;5301</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot4/note&lt;7&gt;61794_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot4/note&lt;6&gt;5_8</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot4/note&lt;7&gt;75231_f5</arg>.  <arg fmt="%z" index="3">There is more than one F5MUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot4/note&lt;4&gt;_mmx_out31</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot4/note&lt;7&gt;5762_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot4/note&lt;4&gt;_mmx_out101</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot4/note&lt;5&gt;232_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="old" >The function generator <arg fmt="%s" index="1">dot1/note&lt;5&gt;9_316</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">dot1/note&lt;5&gt;9_2_f5_01</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">n_clk</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">dot2/p_clk2_or0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">dot1/p_clk2_or0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">dot3/p_clk2_or0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">dot4/p_clk2_or0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">game_on_OBUF</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">start2_and0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">kbd1/s7_or0000</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+</messages>
+

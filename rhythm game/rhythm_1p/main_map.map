@@ -1,0 +1,217 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Map Application Log File for Design 'main'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1000-fg676-4 -cm area -ir off -pr off
+-c 100 -o main_map.ncd main.ngd main.pcf 
+Target Device  : xc3s1000
+Target Package : fg676
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Wed Apr 06 17:24:36 2016
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	dot3/Mcompar_cnt_cmp_ge0000_cy<16>
+   	dot3/Mcount_cnt_cy<0>
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	dot4/Mcompar_cnt_cmp_ge0000_cy<16>
+   	dot4/Mcount_cnt_cy<0>
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	dot1/Mcompar_cnt_cmp_ge0000_cy<16>
+   	dot1/Mcount_cnt_cy<0>
+WARNING:Pack:249 - The following adjacent carry multiplexers occupy different
+   slice components.  The resulting carry chain will have suboptimal timing.
+   	dot2/Mcompar_cnt_cmp_ge0000_cy<16>
+   	dot2/Mcount_cnt_cy<0>
+WARNING:Pack:266 - The function generator dot1/note<6>1161 failed to merge with
+   F5 multiplexer dot1/note<6>4621_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot4/Mrom_note_rom00001001 failed to
+   merge with F5 multiplexer dot4/note<5>_43_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>_36 failed to merge with
+   F5 multiplexer dot3/note<5>_2_f5101_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>8_32 failed to merge with
+   F5 multiplexer dot1/note<5>8_2_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>9_38 failed to merge with
+   F5 multiplexer dot1/note<5>9_2_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/u0/Mmux_dot_d_104 failed to merge
+   with F5 multiplexer dot1/u0/Mmux_dot_d_9_f5_4.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>1291 failed to merge with
+   F5 multiplexer dot3/Mrom_note_rom0000556134652_f5.  There is a conflict for
+   the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>9_316 failed to merge with
+   F5 multiplexer dot3/note<5>9_2_f5_01.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>_36 failed to merge with
+   F5 multiplexer dot1/note<5>_2_f561_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>_36 failed to merge with
+   F5 multiplexer dot1/note<5>_2_f55.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator vfd1/Mmux__varindex0001_13 failed to
+   merge with F5 multiplexer vfd1/Mmux__varindex0001_10_f5_3.  There is a
+   conflict for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>_2_f5_34 failed to merge
+   with F5 multiplexer dot1/note<5>_2_f5_2_f541_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>_36 failed to merge with
+   F5 multiplexer dot1/note<5>_2_f5101_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>8_32 failed to merge with
+   F5 multiplexer dot3/note<5>8_2_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>9_38 failed to merge with
+   F5 multiplexer dot3/note<5>9_2_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>_36 failed to merge with
+   F5 multiplexer dot3/note<5>_2_f55.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>9_315 failed to merge with
+   F5 multiplexer dot1/note<5>9_2_f5_0.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>_2_f5_34 failed to merge
+   with F5 multiplexer dot1/note<5>_2_f5_2_f53.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>8_32 failed to merge with
+   F5 multiplexer dot3/note<5>8_2_f511_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<4>1231 failed to merge with
+   F5 multiplexer dot3/note<5>2221_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>_36 failed to merge with
+   F5 multiplexer dot3/note<5>_2_f561_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>9_315 failed to merge with
+   F5 multiplexer dot3/note<5>9_2_f5_0.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/note<5>_36 failed to merge with
+   F5 multiplexer dot3/note<5>_2_f581_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot2/note<4>2171 failed to merge with
+   F5 multiplexer dot2/note<5>324_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot3/Mrom_note_rom00001381 failed to
+   merge with F5 multiplexer dot3/Mrom_note_rom0000663140422_SW0_f5.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot2/u0/Mmux_dot_d_104 failed to merge
+   with F5 multiplexer dot2/u0/Mmux_dot_d_9_f5_4.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot2/note<4>2101 failed to merge with
+   F5 multiplexer dot2/note<7>81106_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot2/note<4>2131 failed to merge with
+   F5 multiplexer dot2/note<7>71438_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot2/note<7>5301 failed to merge with
+   F5 multiplexer dot2/note<7>61794_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot2/note<7>2_8 failed to merge with
+   F5 multiplexer dot2/note<7>2_6_f5.  There is a conflict for the GYMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot4/note<7>5301 failed to merge with
+   F5 multiplexer dot4/note<7>61794_f5.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot4/note<6>5_8 failed to merge with
+   F5 multiplexer dot4/note<7>75231_f5.  There is more than one F5MUX.  The
+   design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot4/note<4>_mmx_out31 failed to merge
+   with F5 multiplexer dot4/note<7>5762_f5.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot4/note<4>_mmx_out101 failed to
+   merge with F5 multiplexer dot4/note<5>232_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator dot1/note<5>9_316 failed to merge with
+   F5 multiplexer dot1/note<5>9_2_f5_01.  There is a conflict for the FXMUX. 
+   The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net n_clk is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dot2/p_clk2_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dot1/p_clk2_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dot3/p_clk2_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net dot4/p_clk2_or0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net game_on_OBUF is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net start2_and0000 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net kbd1/s7_or0000 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   47
+Logic Utilization:
+  Total Number Slice Registers:         983 out of  15,360    6%
+    Number used as Flip Flops:          955
+    Number used as Latches:              28
+  Number of 4 input LUTs:             6,649 out of  15,360   43%
+Logic Distribution:
+  Number of occupied Slices:          4,000 out of   7,680   52%
+    Number of Slices containing only related logic:   4,000 out of   4,000 100%
+    Number of Slices containing unrelated logic:          0 out of   4,000   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       6,857 out of  15,360   44%
+    Number used as logic:             6,649
+    Number used as a route-thru:        208
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 78 out of     391   19%
+    IOB Latches:                          2
+  Number of BUFGMUXs:                     8 out of       8  100%
+
+Average Fanout of Non-Clock Nets:                4.30
+
+Peak Memory Usage:  344 MB
+Total REAL time to MAP completion:  17 secs 
+Total CPU time to MAP completion:   8 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "main_map.mrp" for details.

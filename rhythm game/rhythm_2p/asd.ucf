@@ -1,0 +1,105 @@
+
+
+NET clk  LOC = "a13";
+NET p1  LOC = "m19";
+net p2  loc = "m25";
+NET rss  LOC = "m26";
+net selec loc="m22";
+net game_on loc= "m24";
+net piezo_i loc= "n21";
+
+
+
+NET "dot_scan<13>"  LOC = "U4"  ;
+NET "dot_scan<3>"  LOC = "T4"  ;
+NET "dot_scan<2>"  LOC = "R3"  ;
+NET "dot_scan<1>"  LOC = "R2"  ;
+NET "dot_scan<0>"  LOC = "R1"  ;
+NET "dot_scan<12>"  LOC = "U3"  ;
+NET "dot_scan<11>"  LOC = "U2"  ;
+NET "dot_scan<10>"  LOC = "T2"  ;
+NET "dot_scan<9>"  LOC = "T1"  ;
+NET "dot_scan<8>"  LOC = "U7"  ;
+NET "dot_scan<7>"  LOC = "U6"  ;
+NET "dot_scan<6>"  LOC = "T7"  ;
+NET "dot_scan<5>"  LOC = "T6"  ;
+NET "dot_scan<4>"  LOC = "T5"  ;
+
+NET "dot_d<9>"  LOC = "W3"  ;
+NET "dot_d<8>"  LOC = "V4"  ;
+NET "dot_d<7>"  LOC = "V3"  ;
+NET "dot_d<6>"  LOC = "V2"  ;
+NET "dot_d<5>"  LOC = "W7"  ;
+NET "dot_d<4>"  LOC = "U1"  ;
+NET "dot_d<3>"  LOC = "V7"  ;
+NET "dot_d<2>"  LOC = "V6"  ;
+NET "dot_d<1>"  LOC = "V5"  ;
+NET "dot_d<0>"  LOC = "U5"  ;
+
+net led<0> loc="ab7";
+net led<1> loc="aa7";
+net led<2> loc="af7";
+net led<3> loc="ac7";
+net led<4> loc="ad6";
+net led<5> loc="ac6";
+net led<6> loc="af6";
+net led<7> loc="ae6";
+
+net s_data<0> loc="ac1";
+net s_data<1> loc="ac2";
+net s_data<2> loc="k25";
+net s_data<3> loc="k26";
+net s_data<4> loc="aa6";
+net s_data<5> loc="ab6";
+net s_data<6> loc="ae5";
+net s_data<7> loc="af5";
+
+
+net s_com<7> loc="ad2";
+net s_com<6> loc="w2";
+net s_com<5> loc="w1";
+net s_com<4> loc="ab4";
+net s_com<3> loc="ab3";
+net s_com<2> loc="w6";
+net s_com<1> loc="w5";
+net s_com<0> loc="w4";
+
+NET piezo_o  LOC = "H2";
+
+net m_s loc="n1";
+net m_data<0> loc="y8";
+net m_data<1> loc="ae7";
+net m_data<2> loc="af8";
+net m_data<3> loc="ae8";
+
+net k_clk loc="n4";
+net k_data loc="n3";
+
+net vfd_e loc="r7";
+net vfd_rs loc="t8";
+net vfd_rw loc="r8";
+net vfd_data<0> loc="r6";
+net vfd_data<1> loc="r5";
+net vfd_data<2> loc="p4";
+net vfd_data<3> loc="p3";
+net vfd_data<4> loc="p2";
+net vfd_data<5> loc="p1";
+net vfd_data<6> loc="p8";
+net vfd_data<7> loc="p7";
+
+net input loc="w15";
+net player2 loc="y16";
+
+NET "p1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "rss" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "m_s" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "k_clk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "selec" CLOCK_DEDICATED_ROUTE = FALSE;
+
+timespec ts_clk = period"clk" 1ms high 50%;
+net clk tnm_net = clk;
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "player2" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+

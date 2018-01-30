@@ -1,0 +1,28 @@
+EN mario_hard NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd" sub00/vhpl17 1459930678
+AR bubble_easy a "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd" sub00/vhpl25 1459930685
+AR mario_hard a "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd" sub00/vhpl18 1459930679
+AR kbd behavioral "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" sub00/vhpl15 1459930691
+AR main behavioral "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" sub00/vhpl07 1459930695
+EN bubble_easy NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd" sub00/vhpl24 1459930684
+AR motor behavioral "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/motor.vhd" sub00/vhpl09 1459930687
+EN mario_easy NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd" sub00/vhpl20 1459930682
+EN s7 NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/s7.vhd" sub00/vhpl12 1459930688
+AR bubble_hard a "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd" sub00/vhpl23 1459930681
+AR dot_dis a "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd" sub00/vhpl01 1459930677
+AR s7 behavioral "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/s7.vhd" sub00/vhpl13 1459930689
+EN motor NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/motor.vhd" sub00/vhpl08 1459930686
+EN vfd NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/vfd.vhd" sub00/vhpl26 1459930692
+EN main NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" sub00/vhpl04 1459930694
+EN song1 NULL C:/Users/RF/Desktop/7test/test6/song1.vhd sub00/vhpl05 1433317069
+EN song2 NULL C:/Users/RF/Desktop/7test/test6/song2.vhd sub00/vhpl02 1433317071
+AR bcd behavioral "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bcd.vhd" sub00/vhpl11 1459930675
+AR song1 a C:/Users/RF/Desktop/7test/test6/song1.vhd sub00/vhpl06 1433317070
+EN dot_dis NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd" sub00/vhpl00 1459930676
+EN buble_hard NULL C:/Users/RF/Desktop/xilinx/test8/song2.vhd sub00/vhpl16 1433428132
+AR buble_hard a C:/Users/RF/Desktop/xilinx/test8/song2.vhd sub00/vhpl19 1433428133
+AR vfd behavioral "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/vfd.vhd" sub00/vhpl27 1459930693
+AR song2 a C:/Users/RF/Desktop/7test/test6/song2.vhd sub00/vhpl03 1433317072
+EN bcd NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bcd.vhd" sub00/vhpl10 1459930674
+AR mario_easy a "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd" sub00/vhpl21 1459930683
+EN kbd NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" sub00/vhpl14 1459930690
+EN bubble_hard NULL "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd" sub00/vhpl22 1459930680

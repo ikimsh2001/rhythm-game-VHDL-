@@ -1,0 +1,2229 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.55 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-fg676
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/main is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/main.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd".
+WARNING:HDLParsers:3607 - Unit work/main/Behavioral is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/main.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd".
+WARNING:HDLParsers:3607 - Unit work/bubble_easy is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/bubble_easy.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd".
+WARNING:HDLParsers:3607 - Unit work/bubble_easy/a is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/bubble_easy.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd".
+WARNING:HDLParsers:3607 - Unit work/mario_hard is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/dot3.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd".
+WARNING:HDLParsers:3607 - Unit work/mario_hard/a is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/dot3.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd".
+WARNING:HDLParsers:3607 - Unit work/kbd is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/kbd.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd".
+WARNING:HDLParsers:3607 - Unit work/kbd/Behavioral is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/kbd.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd".
+WARNING:HDLParsers:3607 - Unit work/motor is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/motor.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/motor.vhd".
+WARNING:HDLParsers:3607 - Unit work/motor/Behavioral is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/motor.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/motor.vhd".
+WARNING:HDLParsers:3607 - Unit work/s7 is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/s7.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/s7.vhd".
+WARNING:HDLParsers:3607 - Unit work/s7/Behavioral is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/s7.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/s7.vhd".
+WARNING:HDLParsers:3607 - Unit work/mario_easy is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/song1.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd".
+WARNING:HDLParsers:3607 - Unit work/mario_easy/a is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/song1.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd".
+WARNING:HDLParsers:3607 - Unit work/bubble_hard is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/song2.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd".
+WARNING:HDLParsers:3607 - Unit work/bubble_hard/a is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/song2.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd".
+WARNING:HDLParsers:3607 - Unit work/vfd is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/vfd.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/vfd.vhd".
+WARNING:HDLParsers:3607 - Unit work/vfd/Behavioral is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/vfd.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/vfd.vhd".
+WARNING:HDLParsers:3607 - Unit work/bcd is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/bcd.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bcd.vhd".
+WARNING:HDLParsers:3607 - Unit work/bcd/Behavioral is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/bcd.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bcd.vhd".
+WARNING:HDLParsers:3607 - Unit work/dot_dis is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/dot_dis.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd".
+WARNING:HDLParsers:3607 - Unit work/dot_dis/a is now defined in a different file.  It was defined in "C:/Users/RF/Desktop/FPGA Rhythm game/rhythm_1p/dot_dis.vhd", and is now defined in "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd".
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bcd.vhd" in Library work.
+Architecture behavioral of Entity bcd is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd" in Library work.
+Architecture a of Entity dot_dis is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd" in Library work.
+Architecture a of Entity mario_hard is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd" in Library work.
+Architecture a of Entity bubble_hard is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd" in Library work.
+Architecture a of Entity mario_easy is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd" in Library work.
+Architecture a of Entity bubble_easy is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/motor.vhd" in Library work.
+Architecture behavioral of Entity motor is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/s7.vhd" in Library work.
+Architecture behavioral of Entity s7 is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" in Library work.
+Architecture behavioral of Entity kbd is up to date.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/vfd.vhd" in Library work.
+Entity <vfd> compiled.
+Entity <vfd> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" in Library work.
+Entity <main> compiled.
+Entity <main> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <main> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mario_hard> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <bubble_hard> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <mario_easy> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <bubble_easy> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <motor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <s7> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kbd> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <vfd> in library <work> (architecture <behavioral>) with generics.
+	cnt_max = 4
+	display_delay = 399
+	stable_delay = 19
+	vfd_char = 16
+
+Analyzing hierarchy for entity <dot_dis> in library <work> (architecture <a>).
+
+Analyzing hierarchy for entity <bcd> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <main> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" line 272: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <cnt>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" line 282: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <cnt>, <l1>, <l2>, <l3>, <l4>, <selec>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" line 310: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <l1>, <l2>, <l3>, <l4>, <cnt>, <selec>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd" line 372: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rss>, <rst>
+INFO:Xst:2679 - Register <l2_0> in unit <main> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <l1_1> in unit <main> has a constant value of 01100001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <l1_4> in unit <main> has a constant value of 00100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <l1_5> in unit <main> has a constant value of 01001101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <l1_6> in unit <main> has a constant value of 01101111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <l1_7> in unit <main> has a constant value of 01100100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <l1_8> in unit <main> has a constant value of 01100101 during circuit operation. The register is replaced by logic.
+Entity <main> analyzed. Unit <main> generated.
+
+Analyzing Entity <mario_hard> in library <work> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd" line 204: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rr>
+INFO:Xst:2679 - Register <seq> in unit <mario_hard> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <mario_hard> analyzed. Unit <mario_hard> generated.
+
+Analyzing Entity <dot_dis> in library <work> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <dot_data_00>, <dot_data_01>, <dot_data_02>, <dot_data_03>, <dot_data_04>, <dot_data_05>, <dot_data_06>, <dot_data_07>, <dot_data_08>, <dot_data_09>, <dot_data_10>, <dot_data_11>, <dot_data_12>, <dot_data_13>
+Entity <dot_dis> analyzed. Unit <dot_dis> generated.
+
+Analyzing Entity <bubble_hard> in library <work> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd" line 204: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rr>
+INFO:Xst:2679 - Register <seq> in unit <bubble_hard> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <bubble_hard> analyzed. Unit <bubble_hard> generated.
+
+Analyzing Entity <mario_easy> in library <work> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd" line 204: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rr>
+INFO:Xst:2679 - Register <seq> in unit <mario_easy> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <mario_easy> analyzed. Unit <mario_easy> generated.
+
+Analyzing Entity <bubble_easy> in library <work> (Architecture <a>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd" line 205: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <rr>
+INFO:Xst:2679 - Register <seq> in unit <bubble_easy> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <bubble_easy> analyzed. Unit <bubble_easy> generated.
+
+Analyzing Entity <motor> in library <work> (Architecture <behavioral>).
+Entity <motor> analyzed. Unit <motor> generated.
+
+Analyzing Entity <s7> in library <work> (Architecture <behavioral>).
+Entity <s7> analyzed. Unit <s7> generated.
+
+Analyzing Entity <bcd> in library <work> (Architecture <behavioral>).
+Entity <bcd> analyzed. Unit <bcd> generated.
+
+Analyzing Entity <kbd> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 86: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 99: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 118: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 137: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 156: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 175: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 194: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 213: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+WARNING:Xst:819 - "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd" line 226: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sel>, <easy>, <hard>, <ary>
+Entity <kbd> analyzed. Unit <kbd> generated.
+
+Analyzing generic Entity <vfd> in library <work> (Architecture <behavioral>).
+	cnt_max = 4
+	display_delay = 399
+	stable_delay = 19
+	vfd_char = 16
+INFO:Xst:2679 - Register <vfd_rw> in unit <vfd> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <vfd> analyzed. Unit <vfd> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <motor>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/motor.vhd".
+WARNING:Xst:647 - Input <s> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8x4-bit ROM for signal <motor_data$mux0001> created at line 26.
+    Found 4-bit register for signal <motor_data>.
+    Found 3-bit up counter for signal <m_cnt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <motor> synthesized.
+
+
+Synthesizing Unit <kbd>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/kbd.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <led2<4:3>> is never assigned. Tied to value 00.
+WARNING:Xst:1780 - Signal <led2_on> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <led1_on> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 4-bit latch for signal <s7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led2_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led2_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led2_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led2_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led2_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led2_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <led1_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 24-bit register for signal <ary>.
+    Found 8-bit comparator not equal for signal <ary_0$cmp_ne0000> created at line 63.
+    Found 8-bit comparator equal for signal <ary_10$cmp_eq0000> created at line 63.
+    Found 8-bit comparator equal for signal <ary_10$cmp_eq0001> created at line 73.
+    Found 8-bit comparator equal for signal <ary_10$cmp_eq0002> created at line 73.
+    Found 8-bit comparator not equal for signal <ary_10$cmp_ne0000> created at line 65.
+    Found 8-bit comparator not equal for signal <ary_20$cmp_ne0000> created at line 68.
+    Found 8-bit register for signal <data>.
+    Found 1-bit register for signal <del>.
+    Found 4-bit up counter for signal <kcnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <kbd> synthesized.
+
+
+Synthesizing Unit <vfd>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/vfd.vhd".
+    Found finite state machine <FSM_0> for signal <vfd_routine>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | vfd_routine$cmp_eq0000    (positive)           |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | delay_20ms                                     |
+    | Power Up State     | delay_20ms                                     |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <vfd_rs>.
+    Found 1-bit register for signal <vfd_e>.
+    Found 8-bit register for signal <vfd_data>.
+    Found 8-bit 17-to-1 multiplexer for signal <$varindex0000> created at line 280.
+    Found 8-bit 17-to-1 multiplexer for signal <$varindex0001> created at line 281.
+    Found 3-bit up counter for signal <cnt_clk>.
+    Found 5-bit register for signal <cnt_delay_20ms>.
+    Found 5-bit adder for signal <cnt_delay_20ms$addsub0000> created at line 138.
+    Found 9-bit register for signal <cnt_delay_2s>.
+    Found 9-bit adder for signal <cnt_delay_2s$addsub0000> created at line 157.
+    Found 5-bit register for signal <cnt_line>.
+    Found 5-bit adder for signal <cnt_line$addsub0000> created at line 176.
+    Found 3-bit comparator greatequal for signal <vfd_e$cmp_ge0000> created at line 239.
+    Found 3-bit comparator lessequal for signal <vfd_e$cmp_le0000> created at line 239.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <vfd> synthesized.
+
+
+Synthesizing Unit <dot_dis>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot_dis.vhd".
+    Found 14x14-bit ROM for signal <dot_scan>.
+    Found 10-bit 14-to-1 multiplexer for signal <dot_d>.
+    Found 1-bit register for signal <clk_d>.
+    Found 9-bit up counter for signal <cnt>.
+    Found 4-bit up counter for signal <cnt_clk>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+Unit <dot_dis> synthesized.
+
+
+Synthesizing Unit <bcd>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bcd.vhd".
+    Found 16x8-bit ROM for signal <seg_d>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <bcd> synthesized.
+
+
+Synthesizing Unit <mario_hard>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/dot3.vhd".
+WARNING:Xst:646 - Signal <seq<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <scale2<1500:1375>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale2<14:0>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale<1500:1375>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <data_b<1500:1360>> is used but never assigned. Tied to default value.
+    Register <dot_data_00> equivalent to <d_d> has been removed
+    Register <dot_data_01> equivalent to <d_dm> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <st>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1501x50-bit ROM for signal <note$rom0000>.
+    Found 10-bit register for signal <d_dm>.
+    Found 10-bit register for signal <d_dp>.
+    Found 10-bit register for signal <d_d>.
+    Found 20-bit up counter for signal <cnt>.
+    Found 20-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 4661.
+    Found 20-bit up counter for signal <cnt2>.
+    Found 20-bit comparator greatequal for signal <cnt2$cmp_ge0000> created at line 4686.
+    Found 10-bit register for signal <dot_data_02>.
+    Found 10-bit register for signal <dot_data_03>.
+    Found 10-bit register for signal <dot_data_04>.
+    Found 10-bit register for signal <dot_data_05>.
+    Found 10-bit register for signal <dot_data_06>.
+    Found 10-bit register for signal <dot_data_07>.
+    Found 10-bit register for signal <dot_data_08>.
+    Found 10-bit register for signal <dot_data_09>.
+    Found 10-bit register for signal <dot_data_10>.
+    Found 10-bit register for signal <dot_data_11>.
+    Found 10-bit register for signal <dot_data_12>.
+    Found 10-bit register for signal <dot_data_13>.
+    Found 1-bit register for signal <n_clk>.
+    Found 11-bit register for signal <note>.
+    Found 11-bit adder for signal <note$addsub0000> created at line 215.
+    Found 1-bit register for signal <p_clk>.
+    Found 1-bit register for signal <p_clk2>.
+    Found 1-bit register for signal <rst>.
+    Found 20-bit up counter for signal <ryt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred 154 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <mario_hard> synthesized.
+
+
+Synthesizing Unit <bubble_hard>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song2.vhd".
+WARNING:Xst:646 - Signal <seq<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <scale2<1700:1551>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale2<14:0>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale<1700:1551>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <data_b<1700:1536>> is used but never assigned. Tied to default value.
+    Register <dot_data_00> equivalent to <d_d> has been removed
+    Register <dot_data_01> equivalent to <d_dm> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <st>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1701x50-bit ROM for signal <note$rom0000>.
+    Found 10-bit register for signal <d_dm>.
+    Found 10-bit register for signal <d_dp>.
+    Found 10-bit register for signal <d_d>.
+    Found 20-bit up counter for signal <cnt>.
+    Found 20-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 5084.
+    Found 20-bit up counter for signal <cnt2>.
+    Found 20-bit comparator greatequal for signal <cnt2$cmp_ge0000> created at line 5109.
+    Found 10-bit register for signal <dot_data_02>.
+    Found 10-bit register for signal <dot_data_03>.
+    Found 10-bit register for signal <dot_data_04>.
+    Found 10-bit register for signal <dot_data_05>.
+    Found 10-bit register for signal <dot_data_06>.
+    Found 10-bit register for signal <dot_data_07>.
+    Found 10-bit register for signal <dot_data_08>.
+    Found 10-bit register for signal <dot_data_09>.
+    Found 10-bit register for signal <dot_data_10>.
+    Found 10-bit register for signal <dot_data_11>.
+    Found 10-bit register for signal <dot_data_12>.
+    Found 10-bit register for signal <dot_data_13>.
+    Found 1-bit register for signal <n_clk>.
+    Found 11-bit register for signal <note>.
+    Found 11-bit adder for signal <note$addsub0000> created at line 215.
+    Found 1-bit register for signal <p_clk>.
+    Found 1-bit register for signal <p_clk2>.
+    Found 1-bit register for signal <rst>.
+    Found 20-bit up counter for signal <ryt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred 154 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <bubble_hard> synthesized.
+
+
+Synthesizing Unit <mario_easy>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/song1.vhd".
+WARNING:Xst:646 - Signal <seq<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <scale2<1500:1375>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale2<14:0>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale<1500:1375>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <data_b<1500:1360>> is used but never assigned. Tied to default value.
+WARNING:Xst:653 - Signal <data_b<929>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
+    Register <dot_data_00> equivalent to <d_d> has been removed
+    Register <dot_data_01> equivalent to <d_dm> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <st>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1501x50-bit ROM for signal <note$rom0000>.
+    Found 10-bit register for signal <d_dm>.
+    Found 10-bit register for signal <d_dp>.
+    Found 10-bit register for signal <d_d>.
+    Found 20-bit up counter for signal <cnt>.
+    Found 20-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 4661.
+    Found 20-bit up counter for signal <cnt2>.
+    Found 20-bit comparator greatequal for signal <cnt2$cmp_ge0000> created at line 4686.
+    Found 10-bit register for signal <dot_data_02>.
+    Found 10-bit register for signal <dot_data_03>.
+    Found 10-bit register for signal <dot_data_04>.
+    Found 10-bit register for signal <dot_data_05>.
+    Found 10-bit register for signal <dot_data_06>.
+    Found 10-bit register for signal <dot_data_07>.
+    Found 10-bit register for signal <dot_data_08>.
+    Found 10-bit register for signal <dot_data_09>.
+    Found 10-bit register for signal <dot_data_10>.
+    Found 10-bit register for signal <dot_data_11>.
+    Found 10-bit register for signal <dot_data_12>.
+    Found 10-bit register for signal <dot_data_13>.
+    Found 1-bit register for signal <n_clk>.
+    Found 11-bit register for signal <note>.
+    Found 11-bit adder for signal <note$addsub0000> created at line 215.
+    Found 1-bit register for signal <p_clk>.
+    Found 1-bit register for signal <p_clk2>.
+    Found 1-bit register for signal <rst>.
+    Found 20-bit up counter for signal <ryt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred 154 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <mario_easy> synthesized.
+
+
+Synthesizing Unit <bubble_easy>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/bubble_easy.vhd".
+WARNING:Xst:646 - Signal <seq<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <scale2<1700:1551>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale2<14:0>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <scale<1700:1551>> is used but never assigned. Tied to default value.
+WARNING:Xst:1781 - Signal <data_b<1700:1536>> is used but never assigned. Tied to default value.
+    Register <dot_data_00> equivalent to <d_d> has been removed
+    Register <dot_data_01> equivalent to <d_dm> has been removed
+WARNING:Xst:737 - Found 1-bit latch for signal <st>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1701x50-bit ROM for signal <note$rom0000>.
+    Found 10-bit register for signal <d_dm>.
+    Found 10-bit register for signal <d_dp>.
+    Found 10-bit register for signal <d_d>.
+    Found 20-bit up counter for signal <cnt>.
+    Found 20-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 5085.
+    Found 20-bit up counter for signal <cnt2>.
+    Found 20-bit comparator greatequal for signal <cnt2$cmp_ge0000> created at line 5110.
+    Found 10-bit register for signal <dot_data_02>.
+    Found 10-bit register for signal <dot_data_03>.
+    Found 10-bit register for signal <dot_data_04>.
+    Found 10-bit register for signal <dot_data_05>.
+    Found 10-bit register for signal <dot_data_06>.
+    Found 10-bit register for signal <dot_data_07>.
+    Found 10-bit register for signal <dot_data_08>.
+    Found 10-bit register for signal <dot_data_09>.
+    Found 10-bit register for signal <dot_data_10>.
+    Found 10-bit register for signal <dot_data_11>.
+    Found 10-bit register for signal <dot_data_12>.
+    Found 10-bit register for signal <dot_data_13>.
+    Found 1-bit register for signal <n_clk>.
+    Found 11-bit register for signal <note>.
+    Found 11-bit adder for signal <note$addsub0000> created at line 216.
+    Found 1-bit register for signal <p_clk>.
+    Found 1-bit register for signal <p_clk2>.
+    Found 1-bit register for signal <rst>.
+    Found 20-bit up counter for signal <ryt>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred 154 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <bubble_easy> synthesized.
+
+
+Synthesizing Unit <s7>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/s7.vhd".
+WARNING:Xst:647 - Input <D1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <com_tmp> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <cnt>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 6                                              |
+    | Clock              | freq                      (rising_edge)        |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <c>.
+    Found 6-bit up counter for signal <f_cnt>.
+    Found 1-bit register for signal <freq>.
+    Found 1-bit register for signal <hun>.
+    Found 1-bit register for signal <one>.
+    Found 2-bit register for signal <space>.
+    Found 1-bit register for signal <ten>.
+    Found 4-bit comparator greater for signal <ten$cmp_gt0000> created at line 90.
+    Found 4-bit register for signal <tmp>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <s7> synthesized.
+
+
+Synthesizing Unit <main>.
+    Related source file is "C:/Users/RF/Desktop/Zilinx Rhythm game/rhythm_1p/main.vhd".
+WARNING:Xst:1780 - Signal <m_cnt2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <m_cnt1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <d_dp4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <d_dp3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <d_dp2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <d_dp1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <d_dp> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
+WARNING:Xst:1780 - Signal <d4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <d3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb9> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb8> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb7> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cb1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Register <l2_6> equivalent to <l2_11> has been removed
+INFO:Xst:1608 - Relative priorities of control signals on register <rr> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 8-bit latch for signal <l1_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l1_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l1_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l1_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <start1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <start2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <start3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <start4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <l2_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found T flip-flop for signal <cnt<0>>.
+    Found 17-bit up counter for signal <f_cnt>.
+    Found 4-bit up counter for signal <h_cnt>.
+    Found 1-bit register for signal <m_freq>.
+    Found 4-bit up counter for signal <o_cnt>.
+    Found 10-bit comparator not equal for signal <o_cnt$cmp_ne0000> created at line 402.
+    Found 10-bit comparator not equal for signal <o_cnt$cmp_ne0001> created at line 402.
+    Found 10-bit comparator not equal for signal <o_cnt$cmp_ne0002> created at line 402.
+    Found 10-bit comparator not equal for signal <o_cnt$cmp_ne0003> created at line 402.
+    Found 4-bit up counter for signal <t_cnt>.
+    Found 3-bit up counter for signal <v_cnt>.
+    Found 1-bit register for signal <v_f>.
+    Summary:
+	inferred   5 Counter(s).
+	inferred   1 T-type flip-flop(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <main> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 10
+ 14x14-bit ROM                                         : 4
+ 1501x50-bit ROM                                       : 2
+ 16x8-bit ROM                                          : 1
+ 1701x50-bit ROM                                       : 2
+ 8x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 7
+ 11-bit adder                                          : 4
+ 5-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 29
+ 17-bit up counter                                     : 1
+ 20-bit up counter                                     : 12
+ 3-bit up counter                                      : 3
+ 4-bit up counter                                      : 8
+ 6-bit up counter                                      : 1
+ 9-bit up counter                                      : 4
+# Registers                                            : 133
+ 1-bit register                                        : 62
+ 10-bit register                                       : 60
+ 11-bit register                                       : 4
+ 2-bit register                                        : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Toggle Registers                                     : 1
+ T flip-flop                                           : 1
+# Latches                                              : 41
+ 1-bit latch                                           : 23
+ 4-bit latch                                           : 1
+ 8-bit latch                                           : 17
+# Comparators                                          : 21
+ 10-bit comparator not equal                           : 4
+ 20-bit comparator greatequal                          : 8
+ 3-bit comparator greatequal                           : 1
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator equal                                : 3
+ 8-bit comparator not equal                            : 3
+# Multiplexers                                         : 6
+ 10-bit 14-to-1 multiplexer                            : 4
+ 8-bit 17-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <seg/cnt/FSM> on signal <cnt[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 001   | 000010
+ 010   | 000100
+ 011   | 001000
+ 100   | 010000
+ 101   | 100000
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <vfd1/vfd_routine/FSM> on signal <vfd_routine[1:8]> with one-hot encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ delay_20ms    | 00000001
+ function_set  | 00000010
+ entry_mode    | 00000100
+ disp_on       | 00001000
+ disp_line1    | 00010000
+ disp_line2    | 00100000
+ delay_2s      | 01000000
+ display_clear | 10000000
+---------------------------
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <motor>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_motor_data_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <motor> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 10
+ 14x14-bit ROM                                         : 4
+ 1501x50-bit ROM                                       : 2
+ 16x8-bit ROM                                          : 1
+ 1701x50-bit ROM                                       : 2
+ 8x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 7
+ 11-bit adder                                          : 4
+ 5-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 29
+ 17-bit up counter                                     : 1
+ 20-bit up counter                                     : 12
+ 3-bit up counter                                      : 3
+ 4-bit up counter                                      : 8
+ 6-bit up counter                                      : 1
+ 9-bit up counter                                      : 4
+# Registers                                            : 744
+ Flip-Flops                                            : 744
+# Latches                                              : 41
+ 1-bit latch                                           : 23
+ 4-bit latch                                           : 1
+ 8-bit latch                                           : 17
+# Comparators                                          : 21
+ 10-bit comparator not equal                           : 4
+ 20-bit comparator greatequal                          : 8
+ 3-bit comparator greatequal                           : 1
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator equal                                : 3
+ 8-bit comparator not equal                            : 3
+# Multiplexers                                         : 6
+ 10-bit 14-to-1 multiplexer                            : 4
+ 8-bit 17-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <l1_9_1> in Unit <main> is equivalent to the following 3 FFs/Latches, which will be removed : <l1_9_2> <l1_3_2> <l1_0_3> 
+INFO:Xst:2261 - The FF/Latch <l2_13_0> in Unit <main> is equivalent to the following 18 FFs/Latches, which will be removed : <l2_13_1> <l2_13_4> <l2_12_0> <l2_12_2> <l2_12_3> <l2_11_4> <l2_10_1> <l2_9_5> <l2_8_1> <l2_8_3> <l2_7_0> <l2_5_0> <l2_4_3> <l2_3_2> <l2_3_3> <l2_3_5> <l2_2_0> <l2_2_4> 
+INFO:Xst:2261 - The FF/Latch <l1_9_0> in Unit <main> is equivalent to the following 6 FFs/Latches, which will be removed : <l1_3_0> <l1_3_3> <l1_3_4> <l1_2_0> <l1_0_0> <l1_0_2> 
+INFO:Xst:2261 - The FF/Latch <l2_14_5> in Unit <main> is equivalent to the following 33 FFs/Latches, which will be removed : <l2_13_5> <l2_13_6> <l2_12_1> <l2_12_5> <l2_12_6> <l2_11_1> <l2_11_5> <l2_11_6> <l2_10_6> <l2_8_0> <l2_8_2> <l2_8_5> <l2_8_6> <l2_7_3> <l2_7_5> <l2_7_6> <l2_5_5> <l2_5_6> <l2_4_0> <l2_4_2> <l2_4_6> <l2_3_1> <l2_2_5> <l2_1_5> <l1_9_4> <l1_9_7> <l1_3_5> <l1_3_6> <l1_2_1> <l1_2_4> <l1_2_5> <l1_2_6> <l1_0_6> 
+INFO:Xst:2261 - The FF/Latch <l2_14_0> in Unit <main> is equivalent to the following 20 FFs/Latches, which will be removed : <l2_14_2> <l2_14_6> <l2_13_2> <l2_13_3> <l2_10_0> <l2_10_2> <l2_10_4> <l2_10_5> <l2_9_1> <l2_9_6> <l2_7_2> <l2_5_1> <l2_4_4> <l2_4_5> <l2_3_6> <l2_2_1> <l2_2_2> <l2_2_3> <l2_1_1> <l2_1_4> 
+INFO:Xst:2261 - The FF/Latch <l2_14_1> in Unit <main> is equivalent to the following 50 FFs/Latches, which will be removed : <l2_14_3> <l2_14_4> <l2_14_7> <l2_13_7> <l2_12_4> <l2_12_7> <l2_11_0> <l2_11_2> <l2_11_3> <l2_11_7> <l2_10_3> <l2_10_7> <l2_9_0> <l2_9_2> <l2_9_3> <l2_9_4> <l2_9_7> <l2_8_4> <l2_8_7> <l2_7_1> <l2_7_4> <l2_7_7> <l2_5_2> <l2_5_3> <l2_5_4> <l2_5_7> <l2_4_1> <l2_4_7> <l2_3_0> <l2_3_4> <l2_3_7> <l2_2_6> <l2_2_7> <l2_1_0> <l2_1_2> <l2_1_3> <l2_1_6> <l2_1_7> <l1_9_3> <l1_9_5> <l1_9_6> <l1_3_1> <l1_3_7> <l1_2_2> <l1_2_3> <l1_2_7> <l1_0_1> <l1_0_4> <l1_0_5> <l1_0_7> 
+INFO:Xst:2261 - The FF/Latch <s7_0> in Unit <kbd> is equivalent to the following 3 FFs/Latches, which will be removed : <s7_1> <s7_2> <s7_3> 
+WARNING:Xst:1710 - FF/Latch <l2_14_1> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <l2_14_5> (without init value) has a constant value of 1 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_3> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_4> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_5> (without init value) has a constant value of 0 in block <mario_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dot_data_13_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_12_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_11_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_10_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_09_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_08_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_07_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_06_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_05_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_04_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_03_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dot_data_02_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dm_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_d_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_3> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_4> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_5> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_dp_6> (without init value) has a constant value of 0 in block <bubble_easy>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <dot_data_13_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_13_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_12_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_12_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_11_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_11_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_10_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_10_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_09_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_09_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_08_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_08_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_07_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_07_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_06_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_06_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_05_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_05_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_04_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_04_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_03_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_03_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_02_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_02_5> 
+INFO:Xst:2261 - The FF/Latch <d_dm_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <d_dm_5> 
+INFO:Xst:2261 - The FF/Latch <d_d_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <d_d_5> 
+INFO:Xst:2261 - The FF/Latch <d_dp_4> in Unit <bubble_hard> is equivalent to the following FF/Latch, which will be removed : <d_dp_5> 
+
+Optimizing unit <main> ...
+
+Optimizing unit <kbd> ...
+
+Optimizing unit <vfd> ...
+
+Optimizing unit <mario_hard> ...
+INFO:Xst:2261 - The FF/Latch <dot_data_13_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_13_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_12_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_12_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_11_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_11_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_10_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_10_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_09_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_09_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_08_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_08_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_07_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_07_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_06_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_06_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_05_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_05_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_04_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_04_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_03_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_03_5> 
+INFO:Xst:2261 - The FF/Latch <dot_data_02_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <dot_data_02_5> 
+INFO:Xst:2261 - The FF/Latch <d_dm_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <d_dm_5> 
+INFO:Xst:2261 - The FF/Latch <d_d_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <d_d_5> 
+INFO:Xst:2261 - The FF/Latch <d_dp_4> in Unit <mario_hard> is equivalent to the following FF/Latch, which will be removed : <d_dp_5> 
+
+Optimizing unit <bubble_hard> ...
+
+Optimizing unit <mario_easy> ...
+
+Optimizing unit <bubble_easy> ...
+
+Optimizing unit <s7> ...
+WARNING:Xst:2677 - Node <dot1/d_dp_9> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_8> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot1/d_dp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_9> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_8> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_4> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_3> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot2/d_dp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_9> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_8> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_6> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot3/d_dp_0> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot4/d_dp_9> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot4/d_dp_8> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot4/d_dp_7> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot4/d_dp_2> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot4/d_dp_1> of sequential type is unconnected in block <main>.
+WARNING:Xst:2677 - Node <dot4/d_dp_0> of sequential type is unconnected in block <main>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 55.
+FlipFlop dot1/note_0 has been replicated 2 time(s)
+FlipFlop dot1/note_1 has been replicated 3 time(s)
+FlipFlop dot1/note_2 has been replicated 3 time(s)
+FlipFlop dot1/note_3 has been replicated 3 time(s)
+FlipFlop dot1/note_4 has been replicated 2 time(s)
+FlipFlop dot2/note_8 has been replicated 1 time(s)
+FlipFlop dot3/note_0 has been replicated 2 time(s)
+FlipFlop dot3/note_1 has been replicated 2 time(s)
+FlipFlop dot3/note_2 has been replicated 2 time(s)
+FlipFlop dot3/note_3 has been replicated 2 time(s)
+FlipFlop dot3/note_4 has been replicated 1 time(s)
+Latch kbd1/led1_4 has been replicated 1 time(s) to handle iob=true attribute.
+Latch kbd1/led1_3 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 955
+ Flip-Flops                                            : 955
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : main.ngr
+Top Level Output File Name         : main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 78
+
+Cell Usage :
+# BELS                             : 9294
+#      GND                         : 1
+#      INV                         : 82
+#      LUT1                        : 124
+#      LUT2                        : 700
+#      LUT2_D                      : 21
+#      LUT2_L                      : 8
+#      LUT3                        : 1943
+#      LUT3_D                      : 31
+#      LUT3_L                      : 21
+#      LUT4                        : 3697
+#      LUT4_D                      : 77
+#      LUT4_L                      : 74
+#      MUXCY                       : 500
+#      MUXF5                       : 1479
+#      MUXF6                       : 211
+#      MUXF7                       : 31
+#      VCC                         : 1
+#      XORCY                       : 293
+# FlipFlops/Latches                : 985
+#      FD                          : 9
+#      FDC                         : 482
+#      FDCE                        : 296
+#      FDE                         : 9
+#      FDE_1                       : 33
+#      FDP                         : 35
+#      FDPE                        : 1
+#      FDR                         : 79
+#      FDRS                        : 1
+#      FDS                         : 10
+#      LD_1                        : 4
+#      LDC                         : 6
+#      LDCE                        : 3
+#      LDCE_1                      : 1
+#      LDCP                        : 11
+#      LDCPE_1                     : 1
+#      LDP                         : 4
+# Clock Buffers                    : 8
+#      BUFG                        : 6
+#      BUFGP                       : 2
+# IO Buffers                       : 75
+#      IBUF                        : 5
+#      OBUF                        : 70
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000fg676-4 
+
+ Number of Slices:                     3705  out of   7680    48%  
+ Number of Slice Flip Flops:            983  out of  15360     6%  
+ Number of 4 input LUTs:               6778  out of  15360    44%  
+ Number of IOs:                          78
+ Number of bonded IOBs:                  77  out of    391    19%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         8  out of      8   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------+------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)  | Load  |
+-----------------------------------------+------------------------+-------+
+clk                                      | BUFGP                  | 321   |
+selec                                    | IBUF+BUFG              | 2     |
+start2_and0000(start2_and00001:O)        | NONE(*)(start4)        | 2     |
+game_on_OBUF(game_on1:O)                 | NONE(*)(rr)            | 5     |
+p1                                       | IBUF                   | 1     |
+m_freq                                   | NONE(mot/motor_data_3) | 7     |
+n_clk(n_clk1:O)                          | NONE(*)(o_cnt_0)       | 12    |
+k_clk                                    | BUFGP                  | 37    |
+kbd1/s7_or0000(kbd1/s7_or00001:O)        | NONE(*)(kbd1/s7_0)     | 17    |
+v_f1                                     | BUFG                   | 40    |
+dot1/n_clk1                              | BUFG                   | 151   |
+dot1/u0/clk_d                            | NONE(dot1/u0/cnt_clk_3)| 4     |
+dot1/p_clk2_or0000(dot1/p_clk2_or00001:O)| NONE(*)(dot1/st)       | 1     |
+dot2/n_clk1                              | BUFG                   | 139   |
+dot2/u0/clk_d                            | NONE(dot2/u0/cnt_clk_3)| 4     |
+dot2/p_clk2_or0000(dot2/p_clk2_or00001:O)| NONE(*)(dot2/st)       | 1     |
+dot3/n_clk1                              | BUFG                   | 119   |
+dot3/u0/clk_d                            | NONE(dot3/u0/cnt_clk_3)| 4     |
+dot3/p_clk2_or0000(dot3/p_clk2_or00001:O)| NONE(*)(dot3/st)       | 1     |
+dot4/n_clk1                              | BUFG                   | 96    |
+dot4/u0/clk_d                            | NONE(dot4/u0/cnt_clk_3)| 4     |
+dot4/p_clk2_or0000(dot4/p_clk2_or00001:O)| NONE(*)(dot4/st)       | 1     |
+seg/freq                                 | NONE(seg/cnt_FSM_FFd1) | 16    |
+-----------------------------------------+------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+------------------------+-------+
+Control Signal                               | Buffer(FF name)        | Load  |
+---------------------------------------------+------------------------+-------+
+dot1/p_clk2_or0000(dot1/p_clk2_or00001:O)    | NONE(dot1/cnt2_0)      | 213   |
+dot2/p_clk2_or0000(dot2/p_clk2_or00001:O)    | NONE(dot2/cnt2_0)      | 201   |
+dot3/p_clk2_or0000(dot3/p_clk2_or00001:O)    | NONE(dot3/cnt2_0)      | 181   |
+dot4/p_clk2_or0000(dot4/p_clk2_or00001:O)    | NONE(dot4/cnt2_0)      | 158   |
+rss                                          | IBUF                   | 41    |
+o_cnt_or0000(o_cnt_or0000:O)                 | NONE(h_cnt_0)          | 21    |
+kbd1/s7_or0001(kbd1/s7_or00011:O)            | NONE(kbd1/led2_0)      | 6     |
+dot1/rst_or0000(dot4/rst_or00001:O)          | NONE(dot1/rst)         | 4     |
+kbd1/led1_3__and0000(kbd1/led1_3__and00001:O)| NONE(kbd1/led1_3)      | 2     |
+kbd1/led1_3__and0001(kbd1/led1_3__and00011:O)| NONE(kbd1/led1_3)      | 2     |
+kbd1/led1_4__and0000(kbd1/led1_4__and00001:O)| NONE(kbd1/led1_4)      | 2     |
+kbd1/led1_4__and0001(kbd1/led1_4__and00011:O)| NONE(kbd1/led1_4)      | 2     |
+kbd1/led1_0__and0000(kbd1/led1_0__and00001:O)| NONE(kbd1/led1_0)      | 1     |
+kbd1/led1_0__and0001(kbd1/led1_0__and00011:O)| NONE(kbd1/led1_0)      | 1     |
+kbd1/led1_1__and0000(kbd1/led1_1__and00001:O)| NONE(kbd1/led1_1)      | 1     |
+kbd1/led1_1__and0001(kbd1/led1_1__and00011:O)| NONE(kbd1/led1_1)      | 1     |
+kbd1/led1_2__and0000(kbd1/led1_2__and00001:O)| NONE(kbd1/led1_2)      | 1     |
+kbd1/led1_2__and0001(kbd1/led1_2__and00011:O)| NONE(kbd1/led1_2)      | 1     |
+kbd1/led1_5__and0000(kbd1/led1_5__and00001:O)| NONE(kbd1/led1_5)      | 1     |
+kbd1/led1_5__and0001(kbd1/led1_5__and00011:O)| NONE(kbd1/led1_5)      | 1     |
+kbd1/led1_6__and0000(kbd1/led1_6__and00001:O)| NONE(kbd1/led1_6)      | 1     |
+kbd1/led1_6__and0001(kbd1/led1_6__and00011:O)| NONE(kbd1/led1_6)      | 1     |
+kbd1/led1_7__and0000(kbd1/led1_7__and00001:O)| NONE(kbd1/led1_7)      | 1     |
+kbd1/led1_7__and0001(kbd1/led1_7__and00011:O)| NONE(kbd1/led1_7)      | 1     |
+kbd1/s7_0__and0000(kbd1/s7_0__and00001:O)    | NONE(kbd1/s7_0)        | 1     |
+kbd1/s7_0__and0001(kbd1/s7_mux0002<0>44:O)   | NONE(kbd1/s7_0)        | 1     |
+rr_0_not0000(rr_and00001:O)                  | NONE(rr)               | 1     |
+start1(start1:Q)                             | NONE(dot1/st)          | 1     |
+start2(start2:Q)                             | NONE(dot2/st)          | 1     |
+start3(start3:Q)                             | NONE(dot3/st)          | 1     |
+start4(start4:Q)                             | NONE(dot4/st)          | 1     |
+---------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.426ns (Maximum Frequency: 80.476MHz)
+   Minimum input arrival time before clock: 11.331ns
+   Maximum output required time after clock: 15.658ns
+   Maximum combinational path delay: 8.404ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.662ns (frequency: 103.498MHz)
+  Total number of paths / destination ports: 73532 / 399
+-------------------------------------------------------------------------
+Delay:               9.662ns (Levels of Logic = 42)
+  Source:            dot2/cnt2_0 (FF)
+  Destination:       dot2/cnt2_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: dot2/cnt2_0 to dot2/cnt2_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.720   1.246  dot2/cnt2_0 (dot2/cnt2_0)
+     LUT2:I0->O            1   0.551   0.000  dot2/Mcompar_cnt2_cmp_ge0000_lut<0> (dot2/Mcompar_cnt2_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<0> (dot2/Mcompar_cnt2_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<1> (dot2/Mcompar_cnt2_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<2> (dot2/Mcompar_cnt2_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<3> (dot2/Mcompar_cnt2_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<4> (dot2/Mcompar_cnt2_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<5> (dot2/Mcompar_cnt2_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<6> (dot2/Mcompar_cnt2_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<7> (dot2/Mcompar_cnt2_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<8> (dot2/Mcompar_cnt2_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<9> (dot2/Mcompar_cnt2_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<10> (dot2/Mcompar_cnt2_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<11> (dot2/Mcompar_cnt2_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<12> (dot2/Mcompar_cnt2_cmp_ge0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<13> (dot2/Mcompar_cnt2_cmp_ge0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<14> (dot2/Mcompar_cnt2_cmp_ge0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<15> (dot2/Mcompar_cnt2_cmp_ge0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<16> (dot2/Mcompar_cnt2_cmp_ge0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<17> (dot2/Mcompar_cnt2_cmp_ge0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcompar_cnt2_cmp_ge0000_cy<18> (dot2/Mcompar_cnt2_cmp_ge0000_cy<18>)
+     MUXCY:CI->O          21   0.303   1.515  dot2/Mcompar_cnt2_cmp_ge0000_cy<19> (dot2/cnt2_cmp_ge0000)
+     INV:I->O              1   0.551   0.801  dot2/cnt2_cmp_ge0000_inv1_INV_0 (dot2/cnt2_cmp_ge0000_inv)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<0> (dot2/Mcount_cnt2_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<1> (dot2/Mcount_cnt2_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<2> (dot2/Mcount_cnt2_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<3> (dot2/Mcount_cnt2_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<4> (dot2/Mcount_cnt2_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<5> (dot2/Mcount_cnt2_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<6> (dot2/Mcount_cnt2_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<7> (dot2/Mcount_cnt2_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<8> (dot2/Mcount_cnt2_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<9> (dot2/Mcount_cnt2_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<10> (dot2/Mcount_cnt2_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<11> (dot2/Mcount_cnt2_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<12> (dot2/Mcount_cnt2_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<13> (dot2/Mcount_cnt2_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<14> (dot2/Mcount_cnt2_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<15> (dot2/Mcount_cnt2_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<16> (dot2/Mcount_cnt2_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  dot2/Mcount_cnt2_cy<17> (dot2/Mcount_cnt2_cy<17>)
+     MUXCY:CI->O           0   0.064   0.000  dot2/Mcount_cnt2_cy<18> (dot2/Mcount_cnt2_cy<18>)
+     XORCY:CI->O           1   0.904   0.000  dot2/Mcount_cnt2_xor<19> (dot2/Mcount_cnt220)
+     FDCE:D                    0.203          dot2/cnt2_19
+    ----------------------------------------
+    Total                      9.662ns (6.100ns logic, 3.562ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'start2_and0000'
+  Clock period: 2.459ns (frequency: 406.669MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.459ns (Levels of Logic = 1)
+  Source:            start2 (LATCH)
+  Destination:       start2 (LATCH)
+  Source Clock:      start2_and0000 falling
+  Destination Clock: start2_and0000 falling
+
+  Data Path: start2 to start2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q             2   0.633   1.072  start2 (start2)
+     LUT3:I1->O            1   0.551   0.000  start2_mux00031 (start2_mux0003)
+     LDCE:D                    0.203          start2
+    ----------------------------------------
+    Total                      2.459ns (1.387ns logic, 1.072ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'p1'
+  Clock period: 3.417ns (frequency: 292.654MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.417ns (Levels of Logic = 1)
+  Source:            cnt_0_0 (FF)
+  Destination:       cnt_0_0 (FF)
+  Source Clock:      p1 rising
+  Destination Clock: p1 rising
+
+  Data Path: cnt_0_0 to cnt_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.720   1.066  cnt_0_0 (cnt_0_0)
+     INV:I->O              2   0.551   0.877  cnt_0_0_not00001_INV_0 (cnt_0_0_not0000)
+     FDCE:D                    0.203          cnt_0_0
+    ----------------------------------------
+    Total                      3.417ns (1.474ns logic, 1.943ns route)
+                                       (43.1% logic, 56.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'm_freq'
+  Clock period: 3.341ns (frequency: 299.312MHz)
+  Total number of paths / destination ports: 18 / 9
+-------------------------------------------------------------------------
+Delay:               3.341ns (Levels of Logic = 1)
+  Source:            mot/m_cnt_0 (FF)
+  Destination:       mot/m_cnt_0 (FF)
+  Source Clock:      m_freq rising
+  Destination Clock: m_freq rising
+
+  Data Path: mot/m_cnt_0 to mot/m_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.720   1.066  mot/m_cnt_0 (mot/m_cnt_0)
+     INV:I->O              1   0.551   0.801  mot/Mcount_m_cnt_xor<0>11_INV_0 (Result<0>2)
+     FDE:D                     0.203          mot/m_cnt_0
+    ----------------------------------------
+    Total                      3.341ns (1.474ns logic, 1.867ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'n_clk'
+  Clock period: 6.970ns (frequency: 143.472MHz)
+  Total number of paths / destination ports: 82 / 20
+-------------------------------------------------------------------------
+Delay:               6.970ns (Levels of Logic = 3)
+  Source:            o_cnt_1 (FF)
+  Destination:       h_cnt_0 (FF)
+  Source Clock:      n_clk rising
+  Destination Clock: n_clk rising
+
+  Data Path: o_cnt_1 to h_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.720   1.260  o_cnt_1 (o_cnt_1)
+     LUT4:I0->O            1   0.551   0.827  h_cnt_not00011_SW0 (N1126)
+     LUT4:I3->O            5   0.551   0.921  h_cnt_not00011 (t_cnt_not0001)
+     MUXF5:S->O            4   0.621   0.917  h_cnt_not0001_f5 (h_cnt_not0001)
+     FDCE:CE                   0.602          h_cnt_0
+    ----------------------------------------
+    Total                      6.970ns (3.045ns logic, 3.925ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'k_clk'
+  Clock period: 12.146ns (frequency: 82.332MHz)
+  Total number of paths / destination ports: 2863 / 66
+-------------------------------------------------------------------------
+Delay:               6.073ns (Levels of Logic = 2)
+  Source:            kbd1/kcnt_1 (FF)
+  Destination:       kbd1/ary_9 (FF)
+  Source Clock:      k_clk rising
+  Destination Clock: k_clk falling
+
+  Data Path: kbd1/kcnt_1 to kbd1/ary_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.720   1.457  kbd1/kcnt_1 (kbd1/kcnt_1)
+     LUT4:I0->O            8   0.551   1.109  kbd1/del_not000111 (kbd1/kcnt_cmp_eq0000)
+     LUT4:I3->O            8   0.551   1.083  kbd1/ary_20_not0001 (kbd1/ary_20_not0001)
+     FDE_1:CE                  0.602          kbd1/ary_20
+    ----------------------------------------
+    Total                      6.073ns (2.424ns logic, 3.649ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'v_f1'
+  Clock period: 8.599ns (frequency: 116.286MHz)
+  Total number of paths / destination ports: 575 / 67
+-------------------------------------------------------------------------
+Delay:               8.599ns (Levels of Logic = 4)
+  Source:            vfd1/cnt_line_0 (FF)
+  Destination:       vfd1/vfd_data_5 (FF)
+  Source Clock:      v_f1 rising
+  Destination Clock: v_f1 rising
+
+  Data Path: vfd1/cnt_line_0 to vfd1/vfd_data_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            49   0.720   2.289  vfd1/cnt_line_0 (vfd1/cnt_line_0)
+     LUT3:I0->O            2   0.551   1.216  vfd1/Mmux__varindex0001_145 (vfd1/Mmux__varindex0001_1211)
+     LUT4:I0->O            1   0.551   1.140  vfd1/vfd_data_mux0001<2>89 (vfd1/vfd_data_mux0001<2>89)
+     LUT4:I0->O            1   0.551   0.827  vfd1/vfd_data_mux0001<2>115 (vfd1/vfd_data_mux0001<2>115)
+     LUT4:I3->O            1   0.551   0.000  vfd1/vfd_data_mux0001<2>125 (vfd1/vfd_data_mux0001<2>)
+     FDC:D                     0.203          vfd1/vfd_data_5
+    ----------------------------------------
+    Total                      8.599ns (3.127ns logic, 5.472ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot1/n_clk1'
+  Clock period: 12.195ns (frequency: 82.002MHz)
+  Total number of paths / destination ports: 2906 / 151
+-------------------------------------------------------------------------
+Delay:               12.195ns (Levels of Logic = 8)
+  Source:            dot1/note_0 (FF)
+  Destination:       dot1/dot_data_13_2 (FF)
+  Source Clock:      dot1/n_clk1 rising
+  Destination Clock: dot1/n_clk1 rising
+
+  Data Path: dot1/note_0 to dot1/dot_data_13_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            320   0.720   3.529  dot1/note_0 (dot1/note_0)
+     LUT4:I3->O            2   0.551   1.216  dot1/note<5>228_SW0 (N1249)
+     LUT3:I0->O            1   0.551   0.000  dot1/note<5>228_G (N3715)
+     MUXF5:I1->O           1   0.360   0.996  dot1/note<5>228 (dot1/note<5>_mmx_out133)
+     LUT3:I1->O            1   0.551   0.000  dot1/Mrom_note_rom00007561_111 (dot1/Mrom_note_rom00007561_111)
+     MUXF5:I1->O           1   0.360   0.869  dot1/Mrom_note_rom00007561_10_f5 (dot1/Mrom_note_rom00007561_10_f5)
+     LUT3:I2->O            1   0.551   0.000  dot1/Mrom_note_rom00007561_5_f5_F (N1508)
+     MUXF5:I0->O           1   0.360   0.827  dot1/Mrom_note_rom00007561_5_f5 (dot1/Mrom_note_rom00007561_5_f5)
+     LUT4:I3->O            1   0.551   0.000  dot1/note<10>18 (dot1/N44)
+     FDC:D                     0.203          dot1/dot_data_13_2
+    ----------------------------------------
+    Total                     12.195ns (4.758ns logic, 7.437ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot1/u0/clk_d'
+  Clock period: 5.559ns (frequency: 179.887MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               5.559ns (Levels of Logic = 1)
+  Source:            dot1/u0/cnt_clk_0 (FF)
+  Destination:       dot1/u0/cnt_clk_3 (FF)
+  Source Clock:      dot1/u0/clk_d rising
+  Destination Clock: dot1/u0/clk_d rising
+
+  Data Path: dot1/u0/cnt_clk_0 to dot1/u0/cnt_clk_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             58   0.720   2.341  dot1/u0/cnt_clk_0 (dot1/u0/cnt_clk_0)
+     LUT4:I0->O            5   0.551   0.921  dot1/dot_scan<13>1 (dot_scan1<13>)
+     FDR:R                     1.026          dot1/u0/cnt_clk_0
+    ----------------------------------------
+    Total                      5.559ns (2.297ns logic, 3.262ns route)
+                                       (41.3% logic, 58.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot2/n_clk1'
+  Clock period: 11.437ns (frequency: 87.434MHz)
+  Total number of paths / destination ports: 1115 / 139
+-------------------------------------------------------------------------
+Delay:               11.437ns (Levels of Logic = 6)
+  Source:            dot2/note_4 (FF)
+  Destination:       dot2/dot_data_13_9 (FF)
+  Source Clock:      dot2/n_clk1 rising
+  Destination Clock: dot2/n_clk1 rising
+
+  Data Path: dot2/note_4 to dot2/dot_data_13_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q            374   0.720   4.007  dot2/note_4 (dot2/note_4)
+     LUT2:I1->O           18   0.551   1.612  dot2/note<5>_SW0 (N57)
+     LUT4:I1->O            1   0.551   0.000  dot2/Mrom_note_rom000061215123_SW0_F (N3468)
+     MUXF5:I0->O           1   0.360   0.827  dot2/Mrom_note_rom000061215123_SW0 (N1424)
+     LUT4_L:I3->LO         1   0.551   0.126  dot2/Mrom_note_rom000061215136 (dot2/Mrom_note_rom000061215136)
+     LUT4:I3->O            1   0.551   0.827  dot2/Mrom_note_rom000061215219_SW0 (N1956)
+     LUT4:I3->O            1   0.551   0.000  dot2/Mrom_note_rom000061215219 (dot2/N51)
+     FDC:D                     0.203          dot2/dot_data_13_9
+    ----------------------------------------
+    Total                     11.437ns (4.038ns logic, 7.399ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot2/u0/clk_d'
+  Clock period: 5.559ns (frequency: 179.887MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               5.559ns (Levels of Logic = 1)
+  Source:            dot2/u0/cnt_clk_0 (FF)
+  Destination:       dot2/u0/cnt_clk_3 (FF)
+  Source Clock:      dot2/u0/clk_d rising
+  Destination Clock: dot2/u0/clk_d rising
+
+  Data Path: dot2/u0/cnt_clk_0 to dot2/u0/cnt_clk_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             58   0.720   2.341  dot2/u0/cnt_clk_0 (dot2/u0/cnt_clk_0)
+     LUT4:I0->O            5   0.551   0.921  dot2/dot_scan<13>1 (dot_scan2<13>)
+     FDR:R                     1.026          dot2/u0/cnt_clk_0
+    ----------------------------------------
+    Total                      5.559ns (2.297ns logic, 3.262ns route)
+                                       (41.3% logic, 58.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot3/n_clk1'
+  Clock period: 12.426ns (frequency: 80.476MHz)
+  Total number of paths / destination ports: 1870 / 119
+-------------------------------------------------------------------------
+Delay:               12.426ns (Levels of Logic = 7)
+  Source:            dot3/note_4 (FF)
+  Destination:       dot3/dot_data_13_1 (FF)
+  Source Clock:      dot3/n_clk1 rising
+  Destination Clock: dot3/n_clk1 rising
+
+  Data Path: dot3/note_4 to dot3/dot_data_13_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            692   0.720   4.560  dot3/note_4 (dot3/note_4)
+     LUT4:I3->O            2   0.551   0.945  dot3/note<5>326_SW0 (N1277)
+     LUT4:I2->O            1   0.551   0.827  dot3/note<5>326 (dot3/note<5>_mmx_out53)
+     LUT4:I3->O            1   0.551   0.000  dot3/note<7>12_F (N1506)
+     MUXF5:I0->O           1   0.360   0.869  dot3/note<7>12 (dot3/note<7>110)
+     LUT3:I2->O            1   0.551   0.000  dot3/Mrom_note_rom00007431_5_f5_F (N1524)
+     MUXF5:I0->O           1   0.360   0.827  dot3/Mrom_note_rom00007431_5_f5 (dot3/Mrom_note_rom00007431_5_f5)
+     LUT4:I3->O            1   0.551   0.000  dot3/note<10>1961 (dot3/N43)
+     FDC:D                     0.203          dot3/dot_data_13_1
+    ----------------------------------------
+    Total                     12.426ns (4.398ns logic, 8.028ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot3/u0/clk_d'
+  Clock period: 5.490ns (frequency: 182.140MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               5.490ns (Levels of Logic = 1)
+  Source:            dot3/u0/cnt_clk_0 (FF)
+  Destination:       dot3/u0/cnt_clk_3 (FF)
+  Source Clock:      dot3/u0/clk_d rising
+  Destination Clock: dot3/u0/clk_d rising
+
+  Data Path: dot3/u0/cnt_clk_0 to dot3/u0/cnt_clk_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             46   0.720   2.272  dot3/u0/cnt_clk_0 (dot3/u0/cnt_clk_0)
+     LUT4:I0->O            5   0.551   0.921  dot3/dot_scan<13>1 (dot_scan3<13>)
+     FDR:R                     1.026          dot3/u0/cnt_clk_0
+    ----------------------------------------
+    Total                      5.490ns (2.297ns logic, 3.193ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot4/n_clk1'
+  Clock period: 10.427ns (frequency: 95.903MHz)
+  Total number of paths / destination ports: 828 / 96
+-------------------------------------------------------------------------
+Delay:               10.427ns (Levels of Logic = 6)
+  Source:            dot4/note_0 (FF)
+  Destination:       dot4/dot_data_13_7 (FF)
+  Source Clock:      dot4/n_clk1 rising
+  Destination Clock: dot4/n_clk1 rising
+
+  Data Path: dot4/note_0 to dot4/dot_data_13_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            131   0.720   2.759  dot4/note_0 (dot4/note_0)
+     LUT2_D:I0->O          4   0.551   0.943  dot4/Mrom_note_rom000042411 (dot4/N182)
+     LUT4_D:I3->O          5   0.551   0.989  dot4/note<7>13911 (dot4/N313)
+     LUT3:I2->O            1   0.551   0.000  dot4/Mrom_note_rom00005812417_F (N3044)
+     MUXF5:I0->O           1   0.360   0.827  dot4/Mrom_note_rom00005812417 (dot4/Mrom_note_rom00005812417)
+     LUT4:I3->O            1   0.551   0.801  dot4/Mrom_note_rom000058124135 (dot4/Mrom_note_rom000058124135)
+     MUXF5:S->O            1   0.621   0.000  dot4/Mrom_note_rom000058124191 (dot4/N49)
+     FDC:D                     0.203          dot4/dot_data_13_7
+    ----------------------------------------
+    Total                     10.427ns (4.108ns logic, 6.319ns route)
+                                       (39.4% logic, 60.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dot4/u0/clk_d'
+  Clock period: 5.467ns (frequency: 182.903MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               5.467ns (Levels of Logic = 1)
+  Source:            dot4/u0/cnt_clk_0 (FF)
+  Destination:       dot4/u0/cnt_clk_3 (FF)
+  Source Clock:      dot4/u0/clk_d rising
+  Destination Clock: dot4/u0/clk_d rising
+
+  Data Path: dot4/u0/cnt_clk_0 to dot4/u0/cnt_clk_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             42   0.720   2.249  dot4/u0/cnt_clk_0 (dot4/u0/cnt_clk_0)
+     LUT4:I0->O            5   0.551   0.921  dot4/dot_scan<13>1 (dot_scan4<13>)
+     FDR:R                     1.026          dot4/u0/cnt_clk_0
+    ----------------------------------------
+    Total                      5.467ns (2.297ns logic, 3.170ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'seg/freq'
+  Clock period: 5.970ns (frequency: 167.504MHz)
+  Total number of paths / destination ports: 77 / 26
+-------------------------------------------------------------------------
+Delay:               5.970ns (Levels of Logic = 2)
+  Source:            seg/cnt_FSM_FFd6 (FF)
+  Destination:       seg/space_1 (FF)
+  Source Clock:      seg/freq rising
+  Destination Clock: seg/freq rising
+
+  Data Path: seg/cnt_FSM_FFd6 to seg/space_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.720   1.342  seg/cnt_FSM_FFd6 (seg/cnt_FSM_FFd6)
+     LUT3:I0->O            2   0.551   0.903  seg/hun_mux000011 (seg/N16)
+     LUT4:I3->O            2   0.551   0.877  seg/space_mux0000<0>21 (seg/N17)
+     FDS:S                     1.026          seg/space_1
+    ----------------------------------------
+    Total                      5.970ns (2.848ns logic, 3.122ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'selec'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.945ns (Levels of Logic = 1)
+  Source:            p2 (PAD)
+  Destination:       start3 (LATCH)
+  Destination Clock: selec rising
+
+  Data Path: p2 to start3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.821   0.921  p2_IBUF (e_p2_OBUF)
+     LDCE_1:D                  0.203          start3
+    ----------------------------------------
+    Total                      1.945ns (1.024ns logic, 0.921ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'start2_and0000'
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Offset:              3.514ns (Levels of Logic = 2)
+  Source:            selec (PAD)
+  Destination:       start4 (LATCH)
+  Destination Clock: start2_and0000 falling
+
+  Data Path: selec to start4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   0.821   1.939  selec_IBUF (e_selec_OBUF1)
+     LUT3:I0->O            1   0.551   0.000  start4_mux00031 (start4_mux0003)
+     LDCE:D                    0.203          start4
+    ----------------------------------------
+    Total                      3.514ns (1.575ns logic, 1.939ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'game_on_OBUF'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.976ns (Levels of Logic = 2)
+  Source:            selec (PAD)
+  Destination:       l1_9_0 (LATCH)
+  Destination Clock: game_on_OBUF rising
+
+  Data Path: selec to l1_9_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   0.821   1.600  selec_IBUF (e_selec_OBUF1)
+     INV:I->O              1   0.551   0.801  l1_0_mux0001<5>1_INV_0 (l1_0_mux0001<5>)
+     LD_1:D                    0.203          l1_9_0
+    ----------------------------------------
+    Total                      3.976ns (1.575ns logic, 2.401ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'kbd1/s7_or0000'
+  Total number of paths / destination ports: 15 / 11
+-------------------------------------------------------------------------
+Offset:              11.331ns (Levels of Logic = 7)
+  Source:            selec (PAD)
+  Destination:       kbd1/led1_0 (LATCH)
+  Destination Clock: kbd1/s7_or0000 falling
+
+  Data Path: selec to kbd1/led1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   0.821   1.795  selec_IBUF (e_selec_OBUF1)
+     LUT4:I1->O           13   0.551   1.196  kbd1/s7_or00011 (kbd1/s7_or0001)
+     LUT4:I3->O            1   0.551   0.827  kbd1/led1_0_mux00023_SW0 (N1097)
+     LUT4:I3->O            2   0.551   1.216  kbd1/led1_0_mux00023 (kbd1/N20)
+     LUT3:I0->O            1   0.551   0.827  kbd1/led1_0_mux000214_SW0 (N1932)
+     LUT4:I3->O            1   0.551   1.140  kbd1/led1_0_mux000214 (kbd1/led1_0_mux000214)
+     LUT4:I0->O            3   0.551   0.000  kbd1/led1_0_mux000225 (kbd1/led1_0_mux0002)
+     LDCP:D                    0.203          kbd1/led1_0
+    ----------------------------------------
+    Total                     11.331ns (4.330ns logic, 7.001ns route)
+                                       (38.2% logic, 61.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'k_clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.107ns (Levels of Logic = 1)
+  Source:            k_data (PAD)
+  Destination:       kbd1/data_7 (FF)
+  Destination Clock: k_clk falling
+
+  Data Path: k_data to kbd1/data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.821   1.083  k_data_IBUF (k_data_IBUF)
+     FDE_1:D                   0.203          kbd1/data_0
+    ----------------------------------------
+    Total                      2.107ns (1.024ns logic, 1.083ns route)
+                                       (48.6% logic, 51.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 2
+-------------------------------------------------------------------------
+Offset:              8.932ns (Levels of Logic = 2)
+  Source:            dot1/p_clk (FF)
+  Destination:       piezo (PAD)
+  Source Clock:      clk rising
+
+  Data Path: dot1/p_clk to piezo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.720   1.216  dot1/p_clk (dot1/p_clk)
+     LUT4:I0->O            1   0.551   0.801  piezo1 (piezo_OBUF)
+     OBUF:I->O                 5.644          piezo_OBUF (piezo)
+    ----------------------------------------
+    Total                      8.932ns (6.915ns logic, 2.017ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'v_f1'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            vfd1/vfd_rs (FF)
+  Destination:       vfd_rs (PAD)
+  Source Clock:      v_f1 rising
+
+  Data Path: vfd1/vfd_rs to vfd_rs
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   0.801  vfd1/vfd_rs (vfd1/vfd_rs)
+     OBUF:I->O                 5.644          vfd_rs_OBUF (vfd_rs)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot1/p_clk2_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              10.379ns (Levels of Logic = 2)
+  Source:            dot1/st (LATCH)
+  Destination:       game_on (PAD)
+  Source Clock:      dot1/p_clk2_or0000 falling
+
+  Data Path: dot1/st to game_on
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q             65   0.633   2.381  dot1/st (dot1/st)
+     LUT4:I0->O           13   0.551   1.170  game_on1 (game_on_OBUF)
+     OBUF:I->O                 5.644          game_on_OBUF (game_on)
+    ----------------------------------------
+    Total                     10.379ns (6.828ns logic, 3.551ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot2/p_clk2_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              10.235ns (Levels of Logic = 2)
+  Source:            dot2/st (LATCH)
+  Destination:       game_on (PAD)
+  Source Clock:      dot2/p_clk2_or0000 falling
+
+  Data Path: dot2/st to game_on
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q             65   0.633   2.237  dot2/st (dot2/st)
+     LUT4:I1->O           13   0.551   1.170  game_on1 (game_on_OBUF)
+     OBUF:I->O                 5.644          game_on_OBUF (game_on)
+    ----------------------------------------
+    Total                     10.235ns (6.828ns logic, 3.407ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot3/p_clk2_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              10.114ns (Levels of Logic = 2)
+  Source:            dot3/st (LATCH)
+  Destination:       game_on (PAD)
+  Source Clock:      dot3/p_clk2_or0000 falling
+
+  Data Path: dot3/st to game_on
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q             66   0.633   2.116  dot3/st (dot3/st)
+     LUT4:I2->O           13   0.551   1.170  game_on1 (game_on_OBUF)
+     OBUF:I->O                 5.644          game_on_OBUF (game_on)
+    ----------------------------------------
+    Total                     10.114ns (6.828ns logic, 3.286ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot4/p_clk2_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              10.072ns (Levels of Logic = 2)
+  Source:            dot4/st (LATCH)
+  Destination:       game_on (PAD)
+  Source Clock:      dot4/p_clk2_or0000 falling
+
+  Data Path: dot4/st to game_on
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDP:G->Q             66   0.633   2.074  dot4/st (dot4/st)
+     LUT4:I3->O           13   0.551   1.170  game_on1 (game_on_OBUF)
+     OBUF:I->O                 5.644          game_on_OBUF (game_on)
+    ----------------------------------------
+    Total                     10.072ns (6.828ns logic, 3.244ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot1/u0/clk_d'
+  Total number of paths / destination ports: 206 / 24
+-------------------------------------------------------------------------
+Offset:              15.490ns (Levels of Logic = 7)
+  Source:            dot1/u0/cnt_clk_1 (FF)
+  Destination:       dot_d<9> (PAD)
+  Source Clock:      dot1/u0/clk_d rising
+
+  Data Path: dot1/u0/cnt_clk_1 to dot_d<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             75   0.720   2.438  dot1/u0/cnt_clk_1 (dot1/u0/cnt_clk_1)
+     LUT3:I0->O            1   0.551   0.000  dot1/u0/Mmux_dot_d_10 (dot1/u0/Mmux_dot_d_10)
+     MUXF5:I1->O           1   0.360   1.140  dot1/u0/Mmux_dot_d_9_f5 (dot1/u0/Mmux_dot_d_9_f5)
+     LUT2:I0->O            1   0.551   0.000  dot_d<0>612 (dot_d<0>612)
+     MUXF5:I0->O           1   0.360   0.996  dot_d<0>61_f5 (dot_d<0>61)
+     LUT3:I1->O            1   0.551   0.827  dot_d<0>204_SW0 (N1946)
+     LUT4:I3->O            1   0.551   0.801  dot_d<0>204 (dot_d_0_OBUF)
+     OBUF:I->O                 5.644          dot_d_0_OBUF (dot_d<0>)
+    ----------------------------------------
+    Total                     15.490ns (9.288ns logic, 6.202ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot1/n_clk1'
+  Total number of paths / destination ports: 140 / 10
+-------------------------------------------------------------------------
+Offset:              14.124ns (Levels of Logic = 7)
+  Source:            dot1/dot_data_08_9 (FF)
+  Destination:       dot_d<9> (PAD)
+  Source Clock:      dot1/n_clk1 rising
+
+  Data Path: dot1/dot_data_08_9 to dot_d<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.072  dot1/dot_data_08_9 (dot1/dot_data_08_9)
+     LUT3:I1->O            1   0.551   0.000  dot1/u0/Mmux_dot_d_119 (dot1/u0/Mmux_dot_d_119)
+     MUXF5:I0->O           1   0.360   1.140  dot1/u0/Mmux_dot_d_9_f5_8 (dot1/u0/Mmux_dot_d_9_f59)
+     LUT2:I0->O            1   0.551   0.000  dot_d<9>612 (dot_d<9>612)
+     MUXF5:I0->O           1   0.360   0.996  dot_d<9>61_f5 (dot_d<9>61)
+     LUT3:I1->O            1   0.551   0.827  dot_d<9>204_SW0 (N1936)
+     LUT4:I3->O            1   0.551   0.801  dot_d<9>204 (dot_d_9_OBUF)
+     OBUF:I->O                 5.644          dot_d_9_OBUF (dot_d<9>)
+    ----------------------------------------
+    Total                     14.124ns (9.288ns logic, 4.836ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot2/u0/clk_d'
+  Total number of paths / destination ports: 206 / 24
+-------------------------------------------------------------------------
+Offset:              15.658ns (Levels of Logic = 7)
+  Source:            dot2/u0/cnt_clk_1 (FF)
+  Destination:       dot_d<6> (PAD)
+  Source Clock:      dot2/u0/clk_d rising
+
+  Data Path: dot2/u0/cnt_clk_1 to dot_d<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             75   0.720   2.438  dot2/u0/cnt_clk_1 (dot2/u0/cnt_clk_1)
+     LUT3:I0->O            1   0.551   0.000  dot2/u0/Mmux_dot_d_76 (dot2/u0/Mmux_dot_d_76)
+     MUXF5:I1->O           1   0.360   0.000  dot2/u0/Mmux_dot_d_6_f5_5 (dot2/u0/Mmux_dot_d_6_f56)
+     MUXF6:I1->O           1   0.342   1.140  dot2/u0/Mmux_dot_d_5_f6_5 (dot2/u0/Mmux_dot_d_5_f66)
+     LUT4:I0->O            1   0.551   0.869  dot_d<6>14_SW0 (N1934)
+     LUT3:I2->O            1   0.551   1.140  dot_d<6>14 (dot_d<6>14)
+     LUT4:I0->O            1   0.551   0.801  dot_d<6>151 (dot_d_6_OBUF)
+     OBUF:I->O                 5.644          dot_d_6_OBUF (dot_d<6>)
+    ----------------------------------------
+    Total                     15.658ns (9.270ns logic, 6.388ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot2/n_clk1'
+  Total number of paths / destination ports: 140 / 10
+-------------------------------------------------------------------------
+Offset:              14.332ns (Levels of Logic = 7)
+  Source:            dot2/d_dm_6 (FF)
+  Destination:       dot_d<6> (PAD)
+  Source Clock:      dot2/n_clk1 rising
+
+  Data Path: dot2/d_dm_6 to dot_d<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.720   1.112  dot2/d_dm_6 (dot2/d_dm_6)
+     LUT3:I1->O            1   0.551   0.000  dot2/u0/Mmux_dot_d_813 (dot2/u0/Mmux_dot_d_813)
+     MUXF5:I1->O           1   0.360   0.000  dot2/u0/Mmux_dot_d_7_f5_5 (dot2/u0/Mmux_dot_d_7_f56)
+     MUXF6:I0->O           1   0.342   1.140  dot2/u0/Mmux_dot_d_5_f6_5 (dot2/u0/Mmux_dot_d_5_f66)
+     LUT4:I0->O            1   0.551   0.869  dot_d<6>14_SW0 (N1934)
+     LUT3:I2->O            1   0.551   1.140  dot_d<6>14 (dot_d<6>14)
+     LUT4:I0->O            1   0.551   0.801  dot_d<6>151 (dot_d_6_OBUF)
+     OBUF:I->O                 5.644          dot_d_6_OBUF (dot_d<6>)
+    ----------------------------------------
+    Total                     14.332ns (9.270ns logic, 5.062ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot3/u0/clk_d'
+  Total number of paths / destination ports: 161 / 21
+-------------------------------------------------------------------------
+Offset:              15.525ns (Levels of Logic = 7)
+  Source:            dot3/u0/cnt_clk_1 (FF)
+  Destination:       dot_d<9> (PAD)
+  Source Clock:      dot3/u0/clk_d rising
+
+  Data Path: dot3/u0/cnt_clk_1 to dot_d<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             59   0.720   2.347  dot3/u0/cnt_clk_1 (dot3/u0/cnt_clk_1)
+     LUT3:I0->O            1   0.551   0.000  dot3/u0/Mmux_dot_d_7 (dot3/u0/Mmux_dot_d_7)
+     MUXF5:I1->O           1   0.360   0.000  dot3/u0/Mmux_dot_d_6_f5 (dot3/u0/Mmux_dot_d_6_f5)
+     MUXF6:I1->O           1   0.342   1.140  dot3/u0/Mmux_dot_d_5_f6 (dot3/u0/Mmux_dot_d_5_f6)
+     LUT4:I0->O            1   0.551   1.140  dot_d<0>21 (dot_d<0>21)
+     LUT3:I0->O            1   0.551   0.827  dot_d<0>204_SW0 (N1946)
+     LUT4:I3->O            1   0.551   0.801  dot_d<0>204 (dot_d_0_OBUF)
+     OBUF:I->O                 5.644          dot_d_0_OBUF (dot_d<0>)
+    ----------------------------------------
+    Total                     15.525ns (9.270ns logic, 6.255ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot3/n_clk1'
+  Total number of paths / destination ports: 98 / 7
+-------------------------------------------------------------------------
+Offset:              14.280ns (Levels of Logic = 7)
+  Source:            dot3/d_dm_9 (FF)
+  Destination:       dot_d<9> (PAD)
+  Source Clock:      dot3/n_clk1 rising
+
+  Data Path: dot3/d_dm_9 to dot_d<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.102  dot3/d_dm_9 (dot3/d_dm_9)
+     LUT3:I1->O            1   0.551   0.000  dot3/u0/Mmux_dot_d_819 (dot3/u0/Mmux_dot_d_819)
+     MUXF5:I1->O           1   0.360   0.000  dot3/u0/Mmux_dot_d_7_f5_8 (dot3/u0/Mmux_dot_d_7_f59)
+     MUXF6:I0->O           1   0.342   1.140  dot3/u0/Mmux_dot_d_5_f6_8 (dot3/u0/Mmux_dot_d_5_f69)
+     LUT4:I0->O            1   0.551   1.140  dot_d<9>21 (dot_d<9>21)
+     LUT3:I0->O            1   0.551   0.827  dot_d<9>204_SW0 (N1936)
+     LUT4:I3->O            1   0.551   0.801  dot_d<9>204 (dot_d_9_OBUF)
+     OBUF:I->O                 5.644          dot_d_9_OBUF (dot_d<9>)
+    ----------------------------------------
+    Total                     14.280ns (9.270ns logic, 5.010ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot4/u0/clk_d'
+  Total number of paths / destination ports: 146 / 20
+-------------------------------------------------------------------------
+Offset:              15.219ns (Levels of Logic = 7)
+  Source:            dot4/u0/cnt_clk_1 (FF)
+  Destination:       dot_d<9> (PAD)
+  Source Clock:      dot4/u0/clk_d rising
+
+  Data Path: dot4/u0/cnt_clk_1 to dot_d<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             53   0.720   2.312  dot4/u0/cnt_clk_1 (dot4/u0/cnt_clk_1)
+     LUT3:I0->O            1   0.551   0.000  dot4/u0/Mmux_dot_d_7 (dot4/u0/Mmux_dot_d_7)
+     MUXF5:I1->O           1   0.360   0.000  dot4/u0/Mmux_dot_d_6_f5 (dot4/u0/Mmux_dot_d_6_f5)
+     MUXF6:I1->O           1   0.342   0.869  dot4/u0/Mmux_dot_d_5_f6 (dot4/u0/Mmux_dot_d_5_f6)
+     LUT4:I2->O            1   0.551   1.140  dot_d<0>21 (dot_d<0>21)
+     LUT3:I0->O            1   0.551   0.827  dot_d<0>204_SW0 (N1946)
+     LUT4:I3->O            1   0.551   0.801  dot_d<0>204 (dot_d_0_OBUF)
+     OBUF:I->O                 5.644          dot_d_0_OBUF (dot_d<0>)
+    ----------------------------------------
+    Total                     15.219ns (9.270ns logic, 5.949ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'dot4/n_clk1'
+  Total number of paths / destination ports: 84 / 6
+-------------------------------------------------------------------------
+Offset:              14.009ns (Levels of Logic = 7)
+  Source:            dot4/d_dm_9 (FF)
+  Destination:       dot_d<9> (PAD)
+  Source Clock:      dot4/n_clk1 rising
+
+  Data Path: dot4/d_dm_9 to dot_d<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.720   1.102  dot4/d_dm_9 (dot4/d_dm_9)
+     LUT3:I1->O            1   0.551   0.000  dot4/u0/Mmux_dot_d_819 (dot4/u0/Mmux_dot_d_819)
+     MUXF5:I1->O           1   0.360   0.000  dot4/u0/Mmux_dot_d_7_f5_8 (dot4/u0/Mmux_dot_d_7_f59)
+     MUXF6:I0->O           1   0.342   0.869  dot4/u0/Mmux_dot_d_5_f6_8 (dot4/u0/Mmux_dot_d_5_f69)
+     LUT4:I2->O            1   0.551   1.140  dot_d<9>21 (dot_d<9>21)
+     LUT3:I0->O            1   0.551   0.827  dot_d<9>204_SW0 (N1936)
+     LUT4:I3->O            1   0.551   0.801  dot_d<9>204 (dot_d_9_OBUF)
+     OBUF:I->O                 5.644          dot_d_9_OBUF (dot_d<9>)
+    ----------------------------------------
+    Total                     14.009ns (9.270ns logic, 4.739ns route)
+                                       (66.2% logic, 33.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'm_freq'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            mot/motor_data_3 (FF)
+  Destination:       m_data<3> (PAD)
+  Source Clock:      m_freq rising
+
+  Data Path: mot/motor_data_3 to m_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.720   0.801  mot/motor_data_3 (mot/motor_data_3)
+     OBUF:I->O                 5.644          m_data_3_OBUF (m_data<3>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'seg/freq'
+  Total number of paths / destination ports: 34 / 13
+-------------------------------------------------------------------------
+Offset:              9.138ns (Levels of Logic = 2)
+  Source:            seg/tmp_3 (FF)
+  Destination:       s_data<7> (PAD)
+  Source Clock:      seg/freq rising
+
+  Data Path: seg/tmp_3 to s_data<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              8   0.720   1.422  seg/tmp_3 (seg/tmp_3)
+     LUT4:I0->O            1   0.551   0.801  seg/bcd_dec/Mrom_seg_d51 (s_data_5_OBUF)
+     OBUF:I->O                 5.644          s_data_5_OBUF (s_data<5>)
+    ----------------------------------------
+    Total                      9.138ns (6.915ns logic, 2.223ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'kbd1/s7_or0000'
+  Total number of paths / destination ports: 14 / 8
+-------------------------------------------------------------------------
+Offset:              8.885ns (Levels of Logic = 2)
+  Source:            kbd1/led1_7 (LATCH)
+  Destination:       led<7> (PAD)
+  Source Clock:      kbd1/s7_or0000 falling
+
+  Data Path: kbd1/led1_7 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             4   0.633   1.256  kbd1/led1_7 (kbd1/led1_7)
+     LUT2:I0->O            1   0.551   0.801  led<7>1 (led_7_OBUF)
+     OBUF:I->O                 5.644          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      8.885ns (6.828ns logic, 2.057ns route)
+                                       (76.8% logic, 23.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               8.404ns (Levels of Logic = 2)
+  Source:            rss (PAD)
+  Destination:       e_rss (PAD)
+
+  Data Path: rss to e_rss
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            47   0.821   1.939  rss_IBUF (e_rss_OBUF)
+     OBUF:I->O                 5.644          e_rss_OBUF (e_rss)
+    ----------------------------------------
+    Total                      8.404ns (6.465ns logic, 1.939ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 390.00 secs
+Total CPU time to Xst completion: 389.68 secs
+ 
+--> 
+
+Total memory usage is 586988 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  350 (   0 filtered)
+Number of infos    :   52 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\RF\Desktop\FPGA Rhythm game\rhythm_2p\main.ncd
+OUTFILE=C:\Users\RF\Desktop\FPGA Rhythm game\rhythm_2p\main.bit
+FAMILY=Spartan3
+PART=xc3s1000-4fg676
+WORKINGDIR=C:\Users\RF\Desktop\FPGA Rhythm game\rhythm_2p
+LICENSE=WebPack
+USER_INFO=211025907_0_0_713

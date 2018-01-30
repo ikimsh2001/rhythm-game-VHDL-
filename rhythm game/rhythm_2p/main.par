@@ -1,0 +1,256 @@
+Release 14.6 par P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+RF-PC::  Wed Jun 10 13:48:10 2015
+
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+
+
+Constraints file: main.pcf.
+Loading device for application Rf_Device from file '3s1000.nph' in environment C:\Xilinx\14.6\ISE_DS\ISE\.
+   "main" is an NCD, version 3.2, device xc3s1000, package fg676, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.39 2013-06-08".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        8 out of 8     100%
+   Number of External IOBs                  76 out of 391    19%
+      Number of LOCed IOBs                  76 out of 76    100%
+
+   Number of Slices                       1415 out of 7680   18%
+      Number of SLICEMs                      4 out of 3840    1%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+WARNING:Par:288 - The signal m_s_IBUF has no load.  PAR will not attempt to route this signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:67d74ab1) REAL time: 2 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:67d74ab1) REAL time: 2 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:67d74ab1) REAL time: 2 secs 
+
+WARNING:Place:414 - The input design contains local clock signal(s). To get a better result, we recommend users run map
+   with the "-timing" option set before starting the placement.
+Phase 4.2  Initial Clock and IO Placement
+
+..............
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <k_clk_BUFGP/BUFG> is placed at site <BUFGMUX7>. The IO component <k_clk> is
+   placed at site <N4>.  This will not allow the use of the fast path between the IO and the Clock buffer. This is
+   normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <k_clk.PAD> allowing your design
+   to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of this
+   override is highly discouraged as it may lead to very poor timing results. It is recommended that this error
+   condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <selec_IBUF_BUFG> is placed at site <BUFGMUX5>. The IO component <selec> is
+   placed at site <M22>.  This will not allow the use of the fast path between the IO and the Clock buffer. This is
+   normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <selec.PAD> allowing your design
+   to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of this
+   override is highly discouraged as it may lead to very poor timing results. It is recommended that this error
+   condition be corrected in the design.
+WARNING:Place:1019 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <player2_IBUF_BUFG> is placed at site <BUFGMUX1>. The IO component <player2> is
+   placed at site <Y16>.  This will not allow the use of the fast path between the IO and the Clock buffer. This is
+   normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <player2.PAD> allowing your design
+   to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of this
+   override is highly discouraged as it may lead to very poor timing results. It is recommended that this error
+   condition be corrected in the design.
+Phase 4.2  Initial Clock and IO Placement (Checksum:12f6fa4c) REAL time: 3 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:12f6fa4c) REAL time: 3 secs 
+
+Phase 6.8  Global Placement
+..................................
+...................................................
+Phase 6.8  Global Placement (Checksum:393fa48c) REAL time: 4 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:393fa48c) REAL time: 4 secs 
+
+Phase 8.18  Placement Optimization
+Phase 8.18  Placement Optimization (Checksum:b5c36cb1) REAL time: 4 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:b5c36cb1) REAL time: 4 secs 
+
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
+Writing design to file main.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 9109 unrouted;      REAL time: 5 secs 
+
+Phase  2  : 8569 unrouted;      REAL time: 6 secs 
+
+Phase  3  : 1923 unrouted;      REAL time: 6 secs 
+
+Phase  4  : 1923 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+
+Updating file: main.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+WARNING:Route:455 - CLK Net:seg/freq may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dot1/d_dm_or0000 may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dot2/u0/clk_d may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dot1/u0/clk_d may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dot4/u0/clk_d may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:m may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:m_freq may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dot3/u0/clk_d may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 9 secs 
+Total CPU time to Router completion: 8 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |      BUFGMUX6| No   |  115 |  0.315     |  1.041      |
++---------------------+--------------+------+------+------------+-------------+
+|         k_clk_BUFGP |      BUFGMUX7| No   |   23 |  0.269     |  1.036      |
++---------------------+--------------+------+------+------------+-------------+
+|          dot4/n_clk |      BUFGMUX3| No   |   57 |  0.319     |  1.033      |
++---------------------+--------------+------+------+------------+-------------+
+|        player2_IBUF |      BUFGMUX1| No   |    1 |  0.000     |  0.870      |
++---------------------+--------------+------+------+------------+-------------+
+|          dot1/n_clk |      BUFGMUX0| No   |   94 |  0.403     |  1.104      |
++---------------------+--------------+------+------+------------+-------------+
+|          selec_IBUF |      BUFGMUX5| No   |    2 |  0.023     |  0.761      |
++---------------------+--------------+------+------+------------+-------------+
+|          dot2/n_clk |      BUFGMUX4| No   |   85 |  0.299     |  1.047      |
++---------------------+--------------+------+------+------------+-------------+
+|          dot3/n_clk |      BUFGMUX2| No   |   72 |  0.208     |  0.932      |
++---------------------+--------------+------+------+------------+-------------+
+|             p1_IBUF |         Local|      |    1 |  0.000     |  1.690      |
++---------------------+--------------+------+------+------------+-------------+
+|      kbd1/s7_or0000 |         Local|      |   17 |  0.207     |  3.314      |
++---------------------+--------------+------+------+------------+-------------+
+|    dot4/d_dm_or0000 |         Local|      |   68 |  0.000     |  3.152      |
++---------------------+--------------+------+------+------------+-------------+
+|    dot2/d_dm_or0000 |         Local|      |   96 |  0.000     |  3.284      |
++---------------------+--------------+------+------+------------+-------------+
+|    dot3/d_dm_or0000 |         Local|      |   83 |  0.000     |  3.268      |
++---------------------+--------------+------+------+------------+-------------+
+|            seg/freq |         Local|      |   13 |  0.184     |  3.341      |
++---------------------+--------------+------+------+------------+-------------+
+|    dot1/d_dm_or0000 |         Local|      |  106 |  0.000     |  3.316      |
++---------------------+--------------+------+------+------------+-------------+
+|       dot2/u0/clk_d |         Local|      |    3 |  0.000     |  2.265      |
++---------------------+--------------+------+------+------------+-------------+
+|       dot1/u0/clk_d |         Local|      |    3 |  0.016     |  2.253      |
++---------------------+--------------+------+------+------------+-------------+
+|               n_clk |         Local|      |    6 |  0.008     |  2.275      |
++---------------------+--------------+------+------+------------+-------------+
+|       dot4/u0/clk_d |         Local|      |    3 |  0.000     |  2.201      |
++---------------------+--------------+------+------+------------+-------------+
+|      start2_and0000 |         Local|      |    1 |  0.000     |  1.062      |
++---------------------+--------------+------+------+------------+-------------+
+|                   m |         Local|      |    6 |  0.005     |  2.273      |
++---------------------+--------------+------+------+------------+-------------+
+|              m_freq |         Local|      |    6 |  0.045     |  2.295      |
++---------------------+--------------+------+------+------------+-------------+
+|       dot3/u0/clk_d |         Local|      |    3 |  0.000     |  2.250      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  ts_clk = PERIOD TIMEGRP "clk" 1000000 ns  | SETUP       | 999987.945ns|    12.055ns|       0|           0
+  HIGH 50%                                  | HOLD        |     0.878ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 10 secs 
+
+Peak Memory Usage:  347 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 15
+Number of info messages: 0
+
+Writing design to file main.ncd
+
+
+
+PAR done!
